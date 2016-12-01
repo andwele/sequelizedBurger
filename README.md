@@ -33,6 +33,37 @@ Written permission must be obtained to miss class or it's considered one of your
 
 
 You must give a full effort on every group and individual project.
+
+
+-----------------------------------------
+
+
+## Important Links And Notes
+
+
+[Slack Room (UPDATE WITH SLACK LINK HERE)](UPDATE)
+
+
+[Absence Request Form](https://docs.google.com/forms/d/1raQkqL-QjLOEy6CzeC_TXGX-hvKZ3ncrfYYxK9fwREQ/viewform)
+
+
+[Student x Student Tutoring Form](https://docs.google.com/forms/d/1fXbpAgtWnEv_pSz1xoddo0-3dqoAXAn1fOyOv29YBi8/viewform)
+
+
+-----------------------------------------
+
+
+[Homework Submission](http://bootcampspot.com)
+
+
+Live Office Hours: 45 minutes before class and 30 minutes after class
+
+
+-----------------------------------------
+## Curriculum By Week
+
+
+##### The material covered in this syllabus is subject to change. Our academic team adjusts to the market rapidly.
 |	Lesson	|	Date (T/Th)	|	Coding Content	|	Recordings	|
 |	----------------------------	|	----------------------------	|	----------------------------	|	----------------------------	|
 |	1.1	|	Tue, Jan 24, 2017	|	Intro to Program / Intro to HTML 	|		|
@@ -40,7 +71,7 @@ You must give a full effort on every group and individual project.
 |	1.3	|	Sat, Jan 28, 2017	|	Intro to CSS Layouts	|		|
 |	2.1	|	Tue, Jan 31, 2017	|	Going Live with Heroku	|		|
 |	2.2	|	Thu, Feb 2, 2017	|	External CSS Styles	|		|
-|	2.3	|	Sat, Feb 4, 2017	|	Introduction to Bootstrap	|		|
+|	2.3	|	Sat, Feb 4, 2017	|	Introduction to Bootstrap	|		|	
 |	3.1	|	Tue, Feb 7, 2017	|	Intro to Javascript (Variables, Arrays, Alerts)	|		|
 |	3.2	|	Thu, Feb 9, 2017	|	Javascript Cont (Conditionals, For-Loops)	|		|
 |	3.3	|	Sat, Feb 11, 2017	|	Javascript Cont (Functions, Objects)	|		|
@@ -110,37 +141,6 @@ You must give a full effort on every group and individual project.
 |		|	Tue, Jul 11, 2017	|	Project Work	|		|
 |		|	Thu, Jul 13, 2017	|	Final Project Presentations	|		|
 |		|	Sat, Jul 15, 2017	|	Demo Day, TBD	|		|	|
-
------------------------------------------
-
-
-## Important Links And Notes
-
-
-[Slack Room (UPDATE WITH SLACK LINK HERE)](UPDATE)
-
-
-[Absence Request Form](https://docs.google.com/forms/d/1raQkqL-QjLOEy6CzeC_TXGX-hvKZ3ncrfYYxK9fwREQ/viewform)
-
-
-[Student x Student Tutoring Form](https://docs.google.com/forms/d/1fXbpAgtWnEv_pSz1xoddo0-3dqoAXAn1fOyOv29YBi8/viewform)
-
-
------------------------------------------
-
-
-[Homework Submission](http://bootcampspot.com)
-
-
-Live Office Hours: 45 minutes before class and 30 minutes after class
-
-
------------------------------------------
-## Curriculum By Week
-
-
-##### The material covered in this syllabus is subject to change. Our academic team adjusts to the market rapidly.
-
 ----------
 
 
