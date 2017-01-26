@@ -63,9 +63,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 ##### The material covered in this syllabus is subject to change. Our academic team adjusts to the market rapidly.
 |	Lesson	|	Date (T/Th)	|	Coding Content	|	Recordings	|
 |	----------------------------	|	----------------------------	|	----------------------------	|	----------------------------	|
-|	1.1	|	Tue, Jan 24, 2017	|	Intro to Program / Intro to HTML 	|		|
-|	1.2	|	Thu, Jan 26, 2017	|	Intro to Git / Intro to CSS	|		|
-|	1.3	|	Sat, Jan 28, 2017	|	Intro to CSS Layouts	|		|
+|	1.1	|	Tue, Jan 24, 2017	|	[Intro to Program / Intro to HTML](01-html-css-three-days) 	|		|
+|	1.2	|	Thu, Jan 26, 2017	|	[Intro to Git / Intro to CSS](01-html-css-three-days)	|		|
+|	1.3	|	Sat, Jan 28, 2017	|	[Intro to CSS Layouts](01-html-css-three-days)	|		|
 |	2.1	|	Tue, Jan 31, 2017	|	Going Live with Heroku	|		|
 |	2.2	|	Thu, Feb 2, 2017	|	External CSS Styles	|		|
 |	2.3	|	Sat, Feb 4, 2017	|	Introduction to Bootstrap	|		|	
