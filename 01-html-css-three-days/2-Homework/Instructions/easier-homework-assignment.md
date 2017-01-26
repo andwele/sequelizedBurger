@@ -7,7 +7,7 @@ In this assignment, you will build a web design skeleton using HTML/CSS. Your co
 
 ### Student Notes
 
-* This exercise will challenge most students unfamiliar with HTML/CSS. If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment. 
+* This exercise will challenge most students unfamiliar with HTML/CSS. If you see this task as too simple or if you finish it within three hours, [attempt the second homework assignment](recommended-homework-assignment.md). 
 
 * Just because this is the "easier" assignment does not make it the "quick" one. The process of learning web development is nothing without a serious time investment. While the work may seem strenuous now, you'll find yourself becoming more comfortable with web development as you put more hours into your training.
 
