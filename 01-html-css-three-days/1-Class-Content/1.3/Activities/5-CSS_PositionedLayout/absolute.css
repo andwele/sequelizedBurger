@@ -1,0 +1,38 @@
+/**
+ * Absolute Position: anchors element to the first element (overall box)
+ **/
+
+.box-set {
+  height: 200px;
+  background: #eaeaed;
+}
+
+.box {
+  /* Absolute Position */
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background: #2db34a;
+}
+
+
+/* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
+
+.box-1 {
+  top: 6%;
+  left: 2%;
+}
+
+.box-2 {
+  top: 0;
+  right: -40px;
+}
+
+.box-3 {
+  bottom: -10px;
+  right: 20px;
+}
+
+.box-4 {
+  bottom: 0;
+}

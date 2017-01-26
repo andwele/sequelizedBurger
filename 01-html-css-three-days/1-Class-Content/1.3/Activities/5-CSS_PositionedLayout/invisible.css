@@ -1,0 +1,25 @@
+.box-set {
+  background: #eaeaed;
+}
+
+.box {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #2db34a;
+}
+
+.box-1 {
+  top: 20px;
+  /* Hides element as if it's not there (compare with "display: hidden;"). */
+  display: none;
+}
+
+.box-2 {
+  left: 40px;
+}
+
+.box-3 {
+  bottom: -10px;
+  right: 20px;
+}

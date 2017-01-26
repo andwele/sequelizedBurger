@@ -1,0 +1,100 @@
+<!-- CSS Box Layout Demo (open this in your browser) -->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+</head>
+
+<body>
+  <h1>CSS Box Model</h1>
+  <p><strong>Total element width</strong> = content width + left padding + right padding + left border + right border + left margin + right margin</p>
+  <p><strong>Total element height</strong> = content height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+  <div class="container">
+    <div id="margin">
+      margin
+      <div id="border">
+        border
+        <div id="padding">
+          padding
+          <div id="content">
+            content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style type="text/css">
+  * {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 60px;
+    color: #333;
+  }
+  
+  body,
+  strong {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 60px;
+    color: #333;
+  }
+  
+  h1 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    color: #1E5792;
+    font-size: 25px;
+    background: #f7f7f7;
+  }
+  
+  p {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  strong {
+    font-weight: 700;
+    line-height: 32px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 30px auto;
+  }
+  
+  #margin {
+    padding: 0 40px 40px;
+    border: 3px dashed #999;
+  }
+  
+  #border {
+    color: white;
+    border: 60px solid #1E5792;
+    border-top: 0;
+    background: #1E5792;
+  }
+  
+  #padding {
+    padding: 0 60px 60px;
+    color: #333;
+    background: white;
+  }
+  
+  #content {
+    background: white;
+    border: 3px solid #999;
+  }
+</style>
+
+</html>
