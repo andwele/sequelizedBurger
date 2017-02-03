@@ -66,9 +66,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	1.1	|	Tue, Jan 24, 2017	|	[Intro to Program / Intro to HTML](01-html-css-three-days/StudentGuide.md) 	|		|
 |	1.2	|	Thu, Jan 26, 2017	|	[Intro to Git / Intro to CSS](01-html-css-three-days/StudentGuide.md)	|		|
 |	1.3	|	Sat, Jan 28, 2017	|	[Intro to CSS Layouts](01-html-css-three-days/StudentGuide.md)	|		|
-|	2.1	|	Tue, Jan 31, 2017	|	[Going Live with Heroku](02-html-css-bootstrap-three-days)	|		|
-|	2.2	|	Thu, Feb 2, 2017	|	[External CSS Styles](02-html-css-bootstrap-three-days)	|		|
-|	2.3	|	Sat, Feb 4, 2017	|	[Introduction to Bootstrap](02-html-css-bootstrap-three-days)	|		|	
+|	2.1	|	Tue, Jan 31, 2017	|	[Going Live with Heroku](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|
+|	2.2	|	Thu, Feb 2, 2017	|	[External CSS Styles](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|
+|	2.3	|	Sat, Feb 4, 2017	|	[Introduction to Bootstrap](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|	
 |	3.1	|	Tue, Feb 7, 2017	|	Intro to Javascript (Variables, Arrays, Alerts)	|		|
 |	3.2	|	Thu, Feb 9, 2017	|	Javascript Cont (Conditionals, For-Loops)	|		|
 |	3.3	|	Sat, Feb 11, 2017	|	Javascript Cont (Functions, Objects)	|		|
