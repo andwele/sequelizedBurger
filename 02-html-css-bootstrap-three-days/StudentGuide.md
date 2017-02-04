@@ -6,7 +6,7 @@ In this week, we will be introducing students to live deployments using Heroku. 
 ### Slide Shows
 * [2.1 - Going Live](1-Class-Content/2.1/Slide-Shows)
 * [2.2 - Down and Dirty CSS](1-Class-Content/2.2/Slide-Shows)
-* 2.3 - Behold Bootstrap
+* [2.3 - Behold Bootstrap](1-Class-Content/2.3/Slide-Shows)
 
 ### Homework Activities
 * [Portfolio Revisited](2-Homework/Instructions/homework-instructions.md)
