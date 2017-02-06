@@ -1,0 +1,250 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 34px;
+  background: url("../images/concrete_seamless.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*sticky footer stuff*/
+
+
+/*http://ryanfait.com/html5-sticky-footer/*/
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+
+/*end sticky footer stuff*/
+
+
+/*start hover stuff*/
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5E7F7E;
+}
+
+nav a:hover {
+  color: #5E7F7E;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+
+/*general*/
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+
+/*header*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 30px;
+  width: 100%;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 90px;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 15px;
+  padding-left: 15px;
+  color: #999;
+  text-decoration: none;
+  line-height: 18px;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+/*footer*/
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  color: #fff;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+  float: right;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  margin-top: 8px;
+  margin-right: 5px;
+  width: 62px;
+  height: 62px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+/*main*/
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  float: left;
+  margin: 0 0 40px 0;
+  padding: 30px;
+  width: 100%;
+  max-width: 650px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/*contact page*/
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
