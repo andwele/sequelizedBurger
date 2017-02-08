@@ -69,9 +69,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	2.1	|	Tue, Jan 31, 2017	|	[Going Live with Heroku](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|
 |	2.2	|	Thu, Feb 2, 2017	|	[External CSS Styles](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|
 |	2.3	|	Sat, Feb 4, 2017	|	[Introduction to Bootstrap](02-html-css-bootstrap-three-days/StudentGuide.md)	|		|	
-|	3.1	|	Tue, Feb 7, 2017	|	Intro to Javascript (Variables, Arrays, Alerts)	|		|
-|	3.2	|	Thu, Feb 9, 2017	|	Javascript Cont (Conditionals, For-Loops)	|		|
-|	3.3	|	Sat, Feb 11, 2017	|	Javascript Cont (Functions, Objects)	|		|
+|	3.1	|	Tue, Feb 7, 2017	|	[Intro to Javascript (Variables, Arrays, Alerts)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
+|	3.2	|	Thu, Feb 9, 2017	|	[Javascript Cont (Conditionals, For-Loops)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
+|	3.3	|	Sat, Feb 11, 2017	|	[Javascript Cont (Functions, Objects)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
 |	4.1	|	Tue, Feb 14, 2017	|	Intro to jQuery	|		|
 |	4.2	|	Thu, Feb 16, 2017	|	DOM Manipulation with jQuery	|		|
 |	4.3	|	Sat, Feb 18, 2017	|	jQuery Calculator Build	|		|
