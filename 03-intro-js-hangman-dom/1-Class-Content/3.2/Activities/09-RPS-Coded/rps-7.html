@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 7</title>
+  </head>
+  <body>
+
+    <div id="game">
+      <p>Press r, p or s to start playing!</p>
+    </div>
+
+    <script type="text/javascript">
+
+      var computerChoices = ["r", "p", "s"];
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
+
+      document.onkeyup = function(event) {
+
+        var userGuess = event.key;
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        // This is the logic that determines who wins the game.
+        if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+
+          // If we choose rock and the computer guesses scissors, increment our wins variable.
+          if ((userGuess === "r") && (computerGuess === "s")) {
+            wins++;
+          }
+
+          // If we choose rock and the computer guesses paper, increment our losses variable.
+          if ((userGuess === "r") && (computerGuess === "p")) {
+            losses++;
+          }
+
+          // If we choose scissors and the computer guesses rock, increment our losses variable.
+          if ((userGuess === "s") && (computerGuess === "r")) {
+            losses++;
+          }
+
+          // If we choose scissors and the computer guesses paper, increment our wins variable.
+          if ((userGuess === "s") && (computerGuess === "p")) {
+            wins++;
+          }
+
+          // If we choose paper and the computer guesses rock, increment our wins variable.
+          if ((userGuess === "p") && (computerGuess === "r")) {
+            wins++;
+          }
+
+          // If we choose paper and the computer guesses scissors, increment our losses variable.
+          if ((userGuess === "p") && (computerGuess === "s")) {
+            losses++;
+          }
+
+          // If we choose the same thing as the computer, increment our ties variable.
+          if (userGuess === computerGuess) {
+            ties++;
+          }
+
+          var html = "<p>Press r, p or s to start playing!</p>" +
+          "<p>wins: " + wins + "</p>" +
+          "<p>losses: " + losses + "</p>" +
+          "<p>ties: " + ties + "</p>";
+
+          document.querySelector("#game").innerHTML = html;
+
+        }
+      };
+
+    </script>
+
+  </body>
+</html>

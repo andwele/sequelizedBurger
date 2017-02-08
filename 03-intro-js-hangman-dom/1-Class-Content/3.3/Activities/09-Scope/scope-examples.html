@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+    var exposed = "This string is visible everywhere!";
+
+    // Note that we can assign functions to variables.
+    // This is extremely important!
+    var firstFunction = function(message) {
+      // Inside of firstFunction, I can see both exposed and
+      // message.
+      console.log(message + exposed);
+    };
+
+    firstFunction("Oh my! ");
+
+    // This will throw an error--the message variable
+    // is only visible *inside* of firstFunction.
+    // console.log(message);
+
+    var secondFunction = function(exposed) {
+      // secondFunction *should* be able to see the exposed
+      //  variable we declared above, but we've "shadowed" it!
+      console.log(exposed);
+    };
+
+    secondFunction("This isn't what I thought I wrote...");
+
+    // Finally, keep in mind that using "return" lets us
+    // give something back to whomever called the function.
+    var thirdFunction = function(message) {
+      return message + exposed;
+    };
+
+    // Try to do things this way, instead of using console.log
+    // inside of your functions.
+    var message = thirdFunction("Oh my! ");
+    console.log(message);
+    </script>
+    
+  </body>
+</html>

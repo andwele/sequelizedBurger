@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+  </head>
+  <body>
+
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+
+      // Array of zoo animals.
+      var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+
+      // Loops through the array to print each zoo animal.
+      for (var i = 0; i < zooAnimals.length; i++) {
+        // Logs the animal at index position i to the console. This code is executed each we go through the loop.
+        console.log(zooAnimals[i]);
+      }
+
+      // We can also do this with a function.
+      function logArray (list) {
+        for (var i = 0; i < list.length; i++) {
+          console.log(list[i]);
+        }
+      }
+
+      // Produces the same result as the raw loop above.
+      logArray(zooAnimals);
+
+    </script>
+    
+  </body>
+</html>
