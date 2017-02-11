@@ -7,7 +7,7 @@ In this week we will be introducing students to their first taste of JavaScript.
 ### Slide Shows
 * [3.1 - Joys of JavaScript](1-Class-Content/3.1/Slide-Shows)
 * [3.2 - Jumping for JS](1-Class-Content/3.2/Slide-Shows)
-* 3.3 - JS Juggernauts
+* [3.3 - JS Juggernauts](1-Class-Content/3.3/Slide-Shows)
 
 ### Homework Activities
 * [Homework Instructions](2-Homework/Instructions/homework-instructions.md)
