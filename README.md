@@ -72,9 +72,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	3.1	|	Tue, Feb 7, 2017	|	[Intro to Javascript (Variables, Arrays, Alerts)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
 |	3.2	|	Thu, Feb 9, 2017	|	[Javascript Cont (Conditionals, For-Loops)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
 |	3.3	|	Sat, Feb 11, 2017	|	[Javascript Cont (Functions, Objects)](03-intro-js-hangman-dom/StudentGuide.md)	|		|
-|	4.1	|	Tue, Feb 14, 2017	|	Intro to jQuery	|		|
-|	4.2	|	Thu, Feb 16, 2017	|	DOM Manipulation with jQuery	|		|
-|	4.3	|	Sat, Feb 18, 2017	|	jQuery Calculator Build	|		|
+|	4.1	|	Tue, Feb 14, 2017	|	[Intro to jQuery](04-jquery-rpg/StudentGuide.md)	|		|
+|	4.2	|	Thu, Feb 16, 2017	|	[DOM Manipulation with jQuery](04-jquery-rpg/StudentGuide.md)	|		|
+|	4.3	|	Sat, Feb 18, 2017	|	[jQuery Calculator Build](04-jquery-rpg/StudentGuide.md)	|		|
 |	5.1	|	Tue, Feb 21, 2017	|	Javascript Review Day	|		|
 |	5.2	|	Thu, Feb 23, 2017	|	Javascript / jQuery Timers	|		|
 |	5.3	|	Sat, Feb 25, 2017	|	Technical Interview Day #1	|		|
