@@ -7,13 +7,13 @@ In this week we will be introducing students to their first taste of jQuery. In 
 ### Lesson Plans
 
 * [4.1 - Lesson Plan](1-Class-Content/4.1/4.1-Lessonplan.md)
-* 4.2 - Lesson Plan
-* 4.3 - Lesson Plan
+* [4.2 - Lesson Plan](1-Class-Content/4.2/4.2-Lessonplan.md)
+* [4.3 - Lesson Plan](1-Class-Content/4.3/4.3-Lessonplan.md)
 
 ### Slide Shows
 
 * [4.1 - jQuery Begins](1-Class-Content/4.1/Slide-Shows)
-* [4.2 - jQuery Jubilee](1-Class-Content/4.2/Slide-Shows)
+* 4.2 - jQuery Jubilee
 
 ### Homework Activities
 
