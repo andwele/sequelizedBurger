@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+@import url(http://fonts.googleapis.com/css?family=Candal);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+body {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+* {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.chrome {
+  position: relative;
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px #f5f5f5;
+  font-size: 200px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  line-height: 1;
+  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+}
+
+.chrome:before {
+  content: 'CHROME';
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  padding-right: 300px;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position:-680px 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.dreams {
+  position: absolute;
+  z-index: 20;
+  margin: 0px;
+  margin-left: 400px;
+  margin-top: -120px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 160px;
+  color: #F975F7 ;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg); /* IE 9 */
+  -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+  -webkit-text-stroke: 1px #f008b7;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+}
+
+.windows .dreams { -webkit-text-stroke: 4px #f008b7; }

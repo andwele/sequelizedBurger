@@ -21,6 +21,37 @@
       var losses = 0;
       var ties = 0;
 
+      var lastWinner;
+      var gameState = {
+        player : {
+          name: "Player",
+          score: {
+
+            wins: 0,
+            losses: 0,
+            ties: 0
+
+          },
+
+          choices: []
+
+        },
+
+        computer: {
+          name: "Computer",
+          score: {
+
+            wins: 0,
+            losses: 0,
+            ties: 0
+
+          },
+
+          choices: []
+
+        }
+      };
+
       // When the user presses a key, it will run the following function...
       document.onkeyup = function(event) {
 
@@ -32,35 +63,51 @@
 
         // If the user presses "r" or "p" or "s", run the game logic.
         if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+          gameState.player.choices.push( userGuess );
+          gameState.computer.choices.push( computerGuess );
 
           // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate counter.
           if ((userGuess === "r") && (computerGuess === "s")) {
-            wins++;
+            somebodyWins( gameState.player, gameState.computer );
           }
           else if ((userGuess === "r") && (computerGuess === "p")) {
-            losses++;
+            somebodyWins( gameState.computer, gameState.player );
           }
           else if ((userGuess === "s") && (computerGuess === "r")) {
-            losses++;
+            somebodyWins( gameState.computer, gameState.player );
           }
           else if ((userGuess === "s") && (computerGuess === "p")) {
-            wins++;
+            somebodyWins( gameState.player, gameState.computer );
           }
           else if ((userGuess === "p") && (computerGuess === "r")) {
-            wins++;
+            somebodyWins( gameState.player, gameState.computer );
           }
           else if ((userGuess === "p") && (computerGuess === "s")) {
-            losses++;
+            somebodyWins( gameState.computer, gameState.player );
           }
           else if (userGuess === computerGuess) {
-            ties++;
+            playerTies();
+          }
+
+          
+
+          function somebodyWins( winner, loser ) {
+            lastWinner = winner;
+
+            winner.score.wins++;
+            loser.score.losses++;
+          }
+
+          function playerTies() {
+            gameState.player.score.ties++;
+            gameState.computer.score.ties++;
           }
 
           // Here we create the HTML that will be injected into our div and displayed on the page.
           var html = "<p>Press r, p or s to start playing!</p>" +
-          "<p>wins: " + wins + "</p>" +
-          "<p>losses: " + losses + "</p>" +
-          "<p>ties: " + ties + "</p>";
+          "<p>wins: " + gameState.player.score.wins + "</p>" +
+          "<p>losses: " + gameState.player.score.losses + "</p>" +
+          "<p>ties: " + gameState.player.score.ties + "</p>";
 
           // Injecting the HTML we just created into our div and updating the game information on our page.
           document.querySelector("#game").innerHTML = html;
