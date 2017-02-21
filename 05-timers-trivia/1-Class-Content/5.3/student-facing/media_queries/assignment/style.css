@@ -1,0 +1,60 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body { background-color: silver; }
+
+nav {
+  padding:0 10%;
+  height:75px;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-size: 60px;
+  display:inline-block;
+}
+
+#menu {
+  display: inline-block;
+  float:right;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+li {
+  padding:26px 30px;
+  display: inline-block;
+  text-align: right;
+  background-color: maroon;
+  color:white;
+}
+
+#page-wrapper {
+  width:1024px;
+  margin: 0 auto;
+  padding-bottom:10px;
+  background-color: antiquewhite;
+}
+
+#image-div {
+  background-image: url("https://www.placecage.com/c/1024/200");
+  width:1024px;
+  height:200px;
+}
+
+#left,
+#center,
+#right {
+  width:30%;
+  display: inline-block;
+  text-align: justify;
+  margin:1.5%;
+  vertical-align: top;
+}
+
+/********************* ADD YOUR MEDIA QUERIES BELOW THIS LINE ***********************/

@@ -1,0 +1,39 @@
+
+body {
+
+  font-size: 24px;
+  background-color: lightgrey;
+
+}
+
+h1 {
+
+  text-align: center;
+  background-color: navy;
+  color: white;
+
+}
+
+
+#left {
+
+  float: left;
+  width: 75%;
+  background-color: cornflowerblue;
+  padding: 2%;
+}
+
+#right {
+
+  float: right;
+  width: 25%;
+  background-color: #B20;
+  padding: 2%;
+}
+
+#text-wrapper {
+
+  width: 1024px;
+  background-color: antiquewhite;
+
+}

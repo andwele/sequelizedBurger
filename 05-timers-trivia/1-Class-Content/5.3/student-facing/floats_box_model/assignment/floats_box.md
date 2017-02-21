@@ -1,0 +1,111 @@
+# CSS One
+
+## Instructions
+
+**DO NOT TOUCH THE HTML.**
+
+* Get the `#right` div next to the `#left` div.
+  * Bonus: Don't change any widths.
+* Get the Background color to extend past the two floated divs.
+* Make the `#right` div end where the #left div ends. Make it so you can scroll to see the text.
+* Make the `#after` div appear after the text boxes.
+* Center the `#text-wrapper`.
+* Make the space around the text with the navy background so it looks like the picture below.
+
+### Goal
+
+  Make your page look like this:
+  ![Goal](CSS_1.png)
+
+**DO NOT TOUCH THE HTML.**
+
+### Starter Code
+
+#### HTML
+
+```
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <div id="text-wrapper">
+
+      <h1>Some Text And Stuff!</h1>
+
+      <div id="left">
+
+        <p>Aesthetic franzen tacos affogato, flexitarian 8-bit etsy fanny pack keffiyeh. Photo booth church-key godard, butcher farm-to-table cliche direct trade pickled gentrify. Knausgaard mustache everyday carry, umami hammock gentrify chia lomo asymmetrical small batch austin. Direct trade tattooed seitan, sriracha thundercats jean shorts scenester yuccie. Asymmetrical actually cray, tote bag ugh vice williamsburg paleo try-hard you probably haven't heard of them. Neutra butcher polaroid put a bird on it offal. Selvage kale chips occupy, offal typewriter butcher aesthetic VHS you probably haven't heard of them synth salvia.</p>
+
+        <p>Topsail lugger crow's nest wench Nelsons folly fluke bowsprit belay Davy Jones' Locker coxswain no prey, no pay marooned driver gabion capstan reef sails boatswain jury mast spike hearties. Booty scuttle Plate Fleet Cat o'nine tails list broadside Jack Ketch shrouds bring a spring upon her cable come about to go on account deadlights lee maroon flogging fore piracy aft knave doubloon. Keelhaul dead men tell no tales flogging Jack Tar parrel Nelsons folly grapple port cog code of conduct rum yawl sloop sutler splice the main brace bilge rat list Buccaneer hang the jib bilge. Aft take a caulk rum aye fathom prow belaying pin scuttle lugsail log Cat o'nine tails strike colors coffer bounty boom Buccaneer crack Jennys tea cup maroon hulk smartly.</p>
+
+      </div>
+
+      <div id="right">
+
+        <p>I'm just not sure if I'll be any good on the grill with one free hand. Do you think horses get songs stuck in their heads? Hey, you don't want to mess with my sister. She'll wear down your self esteem over a period of years. Explore the morgue? Dr. Yap, once I was into you, but after seeing you torture my father, I think we should just be friends with dental benefits. Not if you're a fish. Time for the charm bomb to explode. I could go to jail, or hell, or jail-hell. Gene, you saved us. I owe you my life. Sausage leather belts. I thought I saw a baby bump. I don't know. Eating lobster? It goes against everything we were taught to believe. There's a lot of carrots in that stew.</p>
+
+      </div>
+
+      <div id="helper"></div>
+
+      <div id="after">
+
+        <h1>This should be after the text!</h1>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+```
+
+#### CSS
+
+```
+body{
+  font-size: 24px;
+  background-color: lightgrey;
+
+}
+
+h1{
+  text-align: center;
+  background-color: navy;
+  color:white;
+}
+
+
+#left{
+  float:left;
+  width:75%;
+  background-color: cornflowerblue;
+  padding:2%;
+}
+
+#right{
+  float:right;
+  width:25%;
+  background-color: #B20;
+  padding:2%;
+}
+
+
+#textwrapper{
+  width:1024px;
+  background-color: antiquewhite;
+}
+```
