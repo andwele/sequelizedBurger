@@ -7,7 +7,7 @@ In this week we will be introducing students to their first taste of jQuery. In 
 ### Slide Shows
 
 * [4.1 - jQuery Begins](1-Class-Content/4.1/Slide-Shows)
-* 4.2 - jQuery Jubilee=
+* [4.2 - jQuery Jubilee](1-Class-Content/4.2/Slide-Shows)
 
 ### Homework Activities
 
