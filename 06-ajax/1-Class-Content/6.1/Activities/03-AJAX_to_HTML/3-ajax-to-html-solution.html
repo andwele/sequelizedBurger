@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Year</th>
+          <th>Actors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Example Movie 1 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- Example Movie 2 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- Example Movie 3 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+    var movieName = "mr+nobody";
+    var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&r=json";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+
+      // Chaining several jQuery methods to achieve the following:
+      var firstRowTds = $("table") // Get a reference to the table as a jQuery object
+        .children() // Get all of table's immediate children as an array
+        .eq(1) // Get element at the first index of this returned array (the <tbody>)
+        .children("tr") // Get an array of all <tr> children inside the returned <tbody>
+        .eq(0) // Get the 0th child of this returned array (the first <tr>)
+        .children("td"); // Get an array of all <td> children inside the returned <tr>
+
+      // Setting the inner text of each <td> in the firstRowTds array
+      firstRowTds.eq(0).text(response.Title);
+
+      firstRowTds.eq(1).text(response.Year);
+
+      firstRowTds.eq(2).text(response.Actors);
+    });
+
+    movieName = "the+little+mermaid";
+    queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&r=json";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+
+      // Getting the second row of the table and storing it in secondRowTds
+      var secondRowTds = $("table")
+        .children()
+        .eq(1)
+        .children("tr")
+        .eq(1)
+        .children("td");
+
+      // Setting the inner text of each <td> in secondRowTds
+      secondRowTds.eq(0).text(response.Title);
+
+      secondRowTds.eq(1).text(response.Year);
+
+      secondRowTds.eq(2).text(response.Actors);
+    });
+
+    movieName = "the+lion+king";
+    queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&r=json";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+
+      // Getting the third row of the table
+      var thirdRowTds = $("table")
+        .children()
+        .eq(1)
+        .children("tr")
+        .eq(2)
+        .children("td");
+
+      // Setting text of the thirdRowTds
+      thirdRowTds.eq(0).text(response.Title);
+
+      thirdRowTds.eq(1).text(response.Year);
+
+      thirdRowTds.eq(2).text(response.Actors);
+    });
+  </script>
+</body>
+
+</html>

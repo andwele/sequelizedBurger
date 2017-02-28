@@ -77,12 +77,12 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	4.1	|	Tue, Feb 14, 2017	|	[Intro to jQuery](04-jquery-rpg/StudentGuide.md)	|		|
 |	4.2	|	Thu, Feb 16, 2017	|	[DOM Manipulation with jQuery](04-jquery-rpg/StudentGuide.md)	|		|
 |	4.3	|	Sat, Feb 18, 2017	|	[jQuery Calculator Build](04-jquery-rpg/StudentGuide.md)	|		|
-|	5.1	|	Tue, Feb 21, 2017	|	Javascript Review Day	|		|
-|	5.2	|	Thu, Feb 23, 2017	|	Javascript / jQuery Timers	|		|
-|	5.3	|	Sat, Feb 25, 2017	|	Technical Interview Day #1	|		|
-|	6.1	|	Tue, Feb 28, 2017	|	Intro to APIs and AJAX	|		|
-|	6.2	|	Thu, Mar 2, 2017	|	Advanced AJAX	|		|
-|	6.3	|	Sat, Mar 4, 2017	|	New York Times Real World App Development	|		|
+|	5.1	|	Tue, Feb 21, 2017	|	[Javascript Review Day](05-timers-trivia/StudentGuide.md)	|		|
+|	5.2	|	Thu, Feb 23, 2017	|	[Javascript / jQuery Timers](05-timers-trivia/StudentGuide.md)	|		|
+|	5.3	|	Sat, Feb 25, 2017	|	[Technical Interview Day #1](05-timers-trivia/StudentGuide.md)	|		|
+|	6.1	|	Tue, Feb 28, 2017	|	[Intro to APIs and AJAX](06-ajax/StudentGuide.md)	|		|
+|	6.2	|	Thu, Mar 2, 2017	|	[Advanced AJAX](06-ajax/StudentGuide.md)	|		|
+|	6.3	|	Sat, Mar 4, 2017	|	[New York Times Real World App Development](06-ajax/StudentGuide.md)	|		|
 |	7.1	|	Tue, Mar 7, 2017	|	Client Side Storage with Local Storage	|		|
 |	7.2	|	Thu, Mar 9, 2017	|	Intro to Firebase	|		|
 |	7.3	|	Sat, Mar 11, 2017	|	Firebase Application Building / Group Projects Announced	|		|
