@@ -27,6 +27,12 @@ In this week we will be introducing students to the concept of APIs and the use 
 * [New York Times Article API](http://developer.nytimes.com/docs/read/article_search_api_v2)
 * [NYT Activity Video Walkthrough (Highly Recommended)](https://youtu.be/RQTVw6XJAac?list=PLgJ8UgkiorCnCFzNp0dP0zJyeFAgstYTj)
 
+
+### Live Streams
+
+* [Day 16 (Unit 6.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d1dc6c16-6d89-4ebb-9b00-90358266e00c)
+* [Day 17 (Unit 6.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dafaa460-e4cf-49dc-b95a-8c420715857f)
+
 - - -
 
 ### Copyright
