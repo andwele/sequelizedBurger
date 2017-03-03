@@ -25,6 +25,12 @@ This week we will review JavaScript & jQuery fundamentals, as well as touch on t
 * [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
 * [Debug With Breakpoints](https://developers.google.com/web/tools/chrome-devtools/debug/breakpoints/?hl=en)
 
+### Live Streams
+
+* [Day 13 (Unit 5.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=742afada-6f94-4eb6-9b7e-7ac23f6bc320)
+* [Day 14 (Unit 5.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e55699f9-c38d-4f65-81aa-ca20a26e8b9f)
+* [Day 15 (Unit 5.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fed549bd-0807-49a0-b8dc-47e8988c6e30)
+
 - - -
 
 ### Copyright
