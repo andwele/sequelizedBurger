@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Sign-Up Today!</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Sign-Up Today!</h1>
+    </div>
+
+    <div class="row">
+
+      <!-- Sign-Up Panel-->
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">New Member Sign-Up</h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="email-input">Email:</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+              <div class="form-group">
+                <label for="age-input">Age:</label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+              <div class="form-group">
+                <label for="comment-input">How did you hear about us?</label>
+                <textarea class="form-control" id="comment-input" rows="5"></textarea>
+              </div>
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Most Recent Member Panel -->
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Most Recent Member</h3>
+          </div>
+          <div class="panel-body" id="recent-member">
+            <h2 id="name-display">Jimmy John</h2>
+            <h4 id="email-display">Email: jimmy@john.edu</h4>
+            <h4 id="age-display">Age: 27</h4>
+            <p id="comment-display">I'm signing up, because I want to spread sandwiches to the world.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->.
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Script -->.
+  <script>
+    // NOTE: In order to modify cookies, we must access them over a secure connection e.i = https, localhost:.
+    // Needed to create this function to readCookies. Essentially it splits up the cookie list
+    // See the working app at http://cookie-example-rcb.herokuapp.com/ or by opening with Firefox or Safari
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) {
+          return c.substring(nameEQ.length, c.length);
+        }
+      }
+      return null;
+    }
+
+    // Capture Button Click
+    $("#add-user").on("click", function(event) {
+      event.preventDefault();
+
+      // Capture User Inputs and store into variables
+      var name = $("#name-input").val().trim();
+      var email = $("#email-input").val().trim();
+      var age = $("#age-input").val().trim();
+      var comment = $("#comment-input").val().trim();
+
+      // Console log each of the user inputs to confirm we are receiving them
+      console.log(name);
+      console.log(email);
+      console.log(age);
+      console.log(comment);
+
+      // Replaces the content in the "recent-member" div
+      $("#recent-member").html();
+      $("#recent-member").html();
+      $("#recent-member").html();
+      $("#recent-member").html();
+
+      // Output all of the new information into the relevant sections
+      $("#recent-member").html(name);
+      $("#recent-member").html(email);
+      $("#recent-member").html(age);
+      $("#recent-member").html(comment);
+
+      // Clear the previous cookie by setting it it equal to nothing and its expiration date to a past time
+      document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+      // Store all of the parameters as part of the cookie string
+      document.cookie = "name=" + name;
+      document.cookie = "email=" + email;
+      document.cookie = "age=" + age;
+      document.cookie = "comment=" + comment;
+
+      // Print all the cookies
+      console.log(document.cookie);
+
+      // Recover the parameters by passing the cookie parameters of interest,
+      // through a function that breaks the document.cookie
+      var cookieName = readCookie("name");
+      var cookieEmail = readCookie("email");
+      var cookieAge = readCookie("age");
+      var cookieComment = readCookie("comment");
+
+      // Log all of the cookies to test
+      console.log(cookieName);
+      console.log(cookieEmail);
+      console.log(cookieAge);
+      console.log(cookieComment);
+    });
+
+    // By default display the content from the cookieString
+    $("#recent-member").html(readCookie("name"));
+    $("#recent-member").html(readCookie("email"));
+    $("#recent-member").html(readCookie("age"));
+    $("#recent-member").html(readCookie("comment"));
+  </script>
+
+</body>
+
+</html>

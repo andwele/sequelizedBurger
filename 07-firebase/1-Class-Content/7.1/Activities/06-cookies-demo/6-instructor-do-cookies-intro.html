@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Cookie Example</title>
+
+</head>
+
+<body>
+
+  <!-- Title -->
+  <h1>Guest Book</h1>
+
+  <!-- Input Form -->
+  <form>
+    <h2>Your Name:
+      <input id="your-name" type="text">
+      <input id="save-name" value="Save" type="submit">
+    </h2>
+  </form>
+
+  <!-- Print Name -->
+  <h1 id="greeting"></h1>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- Script -->
+  <script>
+    // NOTE: In order to modify cookies, we must access them over a secure connection e.i = https, localhost:
+    // Needed to create this function to readCookies. Essentially it splits up the cookie list
+    // See the working app at http://cookie-example-rcb.herokuapp.com/ or by opening with Firefox or Safari
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) {
+          return c.substring(nameEQ.length, c.length);
+        }
+      }
+      return null;
+    }
+
+    // When users click "save-name"
+    $("#save-name").on("click", function(event) {
+      event.preventDefault();
+
+      // Clear the previous name in HTML
+      $("#greeting").empty();
+
+      // Grab the User Input
+      var username = $("#your-name").val().trim();
+
+      // Clear the previous cookie by setting it it equal to nothing and its expiration date to a past time
+      document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+      // Store the username as a cookie using "document.cookie"
+      document.cookie = "name=" + username + ";";
+
+      // Print all the cookies
+      console.log(username);
+      console.log(document.cookie);
+
+      // Recover the name by passing the cookie list through a function that breaks it down
+      var cookieName = readCookie("name");
+      console.log(cookieName);
+
+      // Display the recovered name
+      $("#greeting").html(cookieName);
+    });
+
+    // By default (upon load) recover the last cookie
+    var cookieName = readCookie("name");
+    $("#greeting").html(cookieName);
+  </script>
+
+</body>
+
+</html>

@@ -83,9 +83,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	6.1	|	Tue, Feb 28, 2017	|	[Intro to APIs and AJAX](06-ajax/StudentGuide.md)	|		|
 |	6.2	|	Thu, Mar 2, 2017	|	[Advanced AJAX](06-ajax/StudentGuide.md)	|		|
 |	6.3	|	Sat, Mar 4, 2017	|	[New York Times Real World App Development](06-ajax/StudentGuide.md)	|		|
-|	7.1	|	Tue, Mar 7, 2017	|	Client Side Storage with Local Storage	|		|
-|	7.2	|	Thu, Mar 9, 2017	|	Intro to Firebase	|		|
-|	7.3	|	Sat, Mar 11, 2017	|	Firebase Application Building / Group Projects Announced	|		|
+|	7.1	|	Tue, Mar 7, 2017	|	[Client Side Storage with Local Storage](07-firebase/StudentGuide.md)	|		|
+|	7.2	|	Thu, Mar 9, 2017	|	[Intro to Firebase](07-firebase/StudentGuide.md)	|		|
+|	7.3	|	Sat, Mar 11, 2017	|	[Firebase Application Building / Group Projects Announced](07-firebase/StudentGuide.md)	|		|
 |	8.1	|	Tue, Mar 14, 2017	|	Intro to Project #1 / Project Work	|		|
 |	8.2	|	Thu, Mar 16, 2017	|	Project Work	|		|
 |	8.3	|	Sat, Mar 18, 2017	|	Project Work	|		|
