@@ -27,6 +27,12 @@ In this week we will be introducing students to their first taste of JavaScript.
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [JavaScript and jQuery](http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1?s=books&ie=UTF8&qid=1460751938&sr=1-1)
 
+### Live Streams
+
+* [Day 7 (Unit 3.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e4c5a9a-11bd-454d-8563-0e23f7f7c800)
+* [Day 8 (Unit 3.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1ae8e747-2cfc-4432-aaf6-f07336688085)
+* [Day 9 (Unit 3.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=509e03ef-7411-46b6-938f-feda1f223c40)
+
 -------
 
 ### Copyright

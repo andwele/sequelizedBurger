@@ -32,6 +32,7 @@ In this week we will be introducing students to the concept of APIs and the use 
 
 * [Day 16 (Unit 6.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d1dc6c16-6d89-4ebb-9b00-90358266e00c)
 * [Day 17 (Unit 6.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dafaa460-e4cf-49dc-b95a-8c420715857f)
+* [Day 18 (Unit 6.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c4ee61f8-5894-47be-a2dc-0190d95bda9b)
 
 - - -
 

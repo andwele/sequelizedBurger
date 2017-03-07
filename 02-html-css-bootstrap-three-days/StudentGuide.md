@@ -26,6 +26,12 @@ In this week, we will be introducing students to live deployments using Heroku. 
 * [Twitter Bootstrap - Official Page](http://getbootstrap.com/)
 * [Twitter Bootstrap - W3Schools](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
 
+### Live Streams
+
+* [Day 4 (Unit 2.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7b9b72fb-5314-4a5d-90ba-ea0f36c5bceb)
+* [Day 5 (Unit 2.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db4d91d4-127b-4b32-97ae-6aa72485a768)
+* [Day 6 (Unit 2.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=438764fa-c569-4bc2-9e0a-4aa1c8c7747c)
+
 -------
 
 ### Copyright 

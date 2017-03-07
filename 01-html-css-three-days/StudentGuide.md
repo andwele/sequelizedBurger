@@ -26,6 +26,12 @@ In this week, we will be welcoming our students to their first week of our Full-
 * [Learn CSS Layouts](http://learn.shayhowe.com/html-css/positioning-content/)
 * [Learn CSS Positioning](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
 
+### Live Streams
+
+* [Day 1 (Unit 1.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9aff43c-6485-48d3-9b5f-d8d82f2d0008)
+* [Day 2 (Unit 1.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8992d5f2-9e7d-4dc4-b545-c230e9f0c0c5)
+* [Day 3 (Unit 1.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=09737ef1-029b-4444-8679-ad5612b0476c)
+
 -------
 
 ### Copyright 
