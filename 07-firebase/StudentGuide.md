@@ -25,6 +25,11 @@ This week, we are starting to work with data-persistence. We will cover client-s
 * [MomentJS Documentation](http://momentjs.com/)
 * [HTML5 localStorage W3Schools](http://www.w3schools.com/html/html5_webstorage.asp)
 
+
+### Live Streams
+
+* [Day 19 (Unit 7.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9d47010-2582-42eb-a078-8d882a87c8d3)
+
 - - -
 
 ### Copyright
