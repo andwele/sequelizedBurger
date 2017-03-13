@@ -1,4 +1,3 @@
-
 ## Unit 3 - Intro to JavaScript
 
 ### Overview
@@ -17,10 +16,10 @@ In this week we will be introducing students to their first taste of JavaScript.
 ### Key Activities
 * [3.1 - CodeDissection](1-Class-Content/3.1/Activities/01-CodeDissection/)
 * [3.1 - Conditional](1-Class-Content/3.1/Activities/09-ConditionalActivity)
-* [3.2 - Zoo Loop](1-Class-Content/3.2/Activities/5-ZooLoop)
-* [3.2 - Rock Paper Scissors](1-Class-Content/3.2/Activities/9-RPS-Coded)
-* [3.3 - MyFirst Functions](1-Class-Content/3.3/Activities/3-MyFirstFunctions)
-* [3.3 - Car Game](1-Class-Content/3.3/Activities/8-CarGame)
+* [3.2 - Zoo Loop](1-Class-Content/3.2/Activities/05-ZooLoop)
+* [3.2 - Rock Paper Scissors](1-Class-Content/3.2/Activities/09-RPS-Coded)
+* [3.3 - MyFirst Functions](1-Class-Content/3.3/Activities/03-MyFirstFunctions)
+* [3.3 - Car Game](1-Class-Content/3.3/Activities/08-CarGame)
 
 
 ### Helpful Links
