@@ -17,7 +17,6 @@ This week we will review JavaScript & jQuery fundamentals, as well as touch on t
 * [5.2 - This](1-Class-Content/5.2/Activities/2-This)
 * [5.2 - Stopwatch](1-Class-Content/5.2/Activities/7-Stopwatch)
 * [5.3 - Fizz Buzz](1-Class-Content/5.3/student-facing/fizz_buzz)
-* [5.3 - Debugger Math](1-Class-Content/5.3/debugger)
 
 ### Helpful Links
 
