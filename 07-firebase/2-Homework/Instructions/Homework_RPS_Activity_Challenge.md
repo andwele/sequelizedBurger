@@ -17,7 +17,7 @@ In this assignment, you'll indeed create another Rock Paper Scissors game. The c
 
 ### When Should You Be an Expert with the Concepts from This Homework?
 
-By Week 9. Try your _absolute best_ to finish this homework. Remember: you have two weeks to ace this exercise.
+By Week 9. Try your _absolute best_ to finish this homework, even if you finish completing it after you have already turned it in.
 
 ### Setup
 
