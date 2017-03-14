@@ -86,12 +86,12 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	7.1	|	Tue, Mar 7, 2017	|	[Client Side Storage with Local Storage](07-firebase/StudentGuide.md)	|		|
 |	7.2	|	Thu, Mar 9, 2017	|	[Intro to Firebase](07-firebase/StudentGuide.md)	|		|
 |	7.3	|	Sat, Mar 11, 2017	|	[Firebase Application Building / Group Projects Announced](07-firebase/StudentGuide.md)	|		|
-|	8.1	|	Tue, Mar 14, 2017	|	Intro to Project #1 / Project Work	|		|
-|	8.2	|	Thu, Mar 16, 2017	|	Project Work	|		|
-|	8.3	|	Sat, Mar 18, 2017	|	Project Work	|		|
-|	9.1	|	Tue, Mar 21, 2017	|	Interview Questions / Project Work	|		|
-|	9.2	|	Thu, Mar 23, 2017	|	Interview Questions / Project Work	|		|
-|	9.3	|	Sat, Mar 25, 2017	|	Project Presentations #1	|		|
+|	8.1	|	Tue, Mar 14, 2017	|	[Intro to Project #1 / Project Work](08-api-project-week-one/StudentGuide.md)	|		|
+|	8.2	|	Thu, Mar 16, 2017	|	[Project Work](08-api-project-week-one/StudentGuide.md)	|		|
+|	8.3	|	Sat, Mar 18, 2017	|	[Project Work](08-api-project-week-one/StudentGuide.md)	|		|
+|	9.1	|	Tue, Mar 21, 2017	|	[Interview Questions / Project Work](09-api-project-week-two/StudentGuide.md)	|		|
+|	9.2	|	Thu, Mar 23, 2017	|	[Interview Questions / Project Work](09-api-project-week-two/StudentGuide.md)	|		|
+|	9.3	|	Sat, Mar 25, 2017	|	[Project Presentations #1](09-api-project-week-two/StudentGuide.md)	|		|
 |	10.1	|	Tue, Mar 28, 2017	|	Intro to Node.js	|		|
 |	10.2	|	Thu, Mar 30, 2017	|	Reading and Writing Files with Node	|		|
 |	10.3	|	Sat, Apr 1, 2017	|	NPM Packages	|		|
