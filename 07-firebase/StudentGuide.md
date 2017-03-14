@@ -6,9 +6,9 @@ This week, we are starting to work with data-persistence. We will cover client-s
 
 ### Homework Activities
 
-* [Train Time (Recommended)](3-Homework/Instructions/Homework_Train_Activity_Basic.md)
-* [Multiplayer Rock Paper Scissors (Quite the Challenge)](3-Homework/Instructions/Homework_RPS_Activity_Challenge.md)
-* [Demo of Rock Paper Scissors Homework](3-Homework/Instructions/RPS_Video.mov)
+* [Train Time (Recommended)](2-Homework/Instructions/Homework_Train_Activity_Basic.md)
+* [Multiplayer Rock Paper Scissors (Quite the Challenge)](2-Homework/Instructions/Homework_RPS_Activity_Challenge.md)
+* [Demo of Rock Paper Scissors Homework](2-Homework/Instructions/RPS_Video.mov)
 
 ### Key Activities
 
@@ -29,6 +29,8 @@ This week, we are starting to work with data-persistence. We will cover client-s
 ### Live Streams
 
 * [Day 19 (Unit 7.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9d47010-2582-42eb-a078-8d882a87c8d3)
+* [Day 20 (Unit 7.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=138507b3-0389-4a24-94e1-6bff348a7f6d)
+* [Day 21 (Unit 7.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=38783c3b-d91a-4987-ad23-4c2215314a6d)
 
 - - -
 
