@@ -4,9 +4,13 @@
 
 In this week, we will be introducing students to application building with Node and the use of external NPM packges. 
 
+### Presentations
+
+* [Intro Node](1-Class-Content/10.1/Slide-Shows)
+
 ### Homework Activities
 
-* [Liri Bot](/02-lesson-plans/10-intro-node-three-days/2-Homework/Instructions)
+* [Liri Bot](2-Homework/Instructions/homework_instructions.md)
 
 ### Key Activities
 
