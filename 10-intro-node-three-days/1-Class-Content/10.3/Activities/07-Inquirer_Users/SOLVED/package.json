@@ -1,0 +1,14 @@
+{
+  "name": "userprompt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "userprompt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^1.0.2"
+  }
+}

@@ -92,9 +92,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	9.1	|	Tue, Mar 21, 2017	|	[Interview Questions / Project Work](09-api-project-week-two/StudentGuide.md)	|		|
 |	9.2	|	Thu, Mar 23, 2017	|	[Interview Questions / Project Work](09-api-project-week-two/StudentGuide.md)	|		|
 |	9.3	|	Sat, Mar 25, 2017	|	[Project Presentations #1](09-api-project-week-two/StudentGuide.md)	|		|
-|	10.1	|	Tue, Mar 28, 2017	|	Intro to Node.js	|		|
-|	10.2	|	Thu, Mar 30, 2017	|	Reading and Writing Files with Node	|		|
-|	10.3	|	Sat, Apr 1, 2017	|	NPM Packages	|		|
+|	10.1	|	Tue, Mar 28, 2017	|	[Intro to Node.js](10-intro-node-three-days/StudentGuide.md)	|		|
+|	10.2	|	Thu, Mar 30, 2017	|	[Reading and Writing Files with Node](10-intro-node-three-days/StudentGuide.md)	|		|
+|	10.3	|	Sat, Apr 1, 2017	|	[NPM Packages](10-intro-node-three-days/StudentGuide.md)	|		|
 |	11.1	|	Tue, Apr 4, 2017	|	Javascript Constructors Pt I	|		|
 |	11.2	|	Thu, Apr 6, 2017	|	Javascript Constructors Pt II	|		|
 |	11.3	|	Sat, Apr 8, 2017	|	Javascript Callbacks	|		|

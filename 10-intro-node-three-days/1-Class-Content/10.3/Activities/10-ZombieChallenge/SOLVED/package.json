@@ -1,0 +1,14 @@
+{
+  "name": "zombiegame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zombiegame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^1.0.2"
+  }
+}
