@@ -23,11 +23,13 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 
 
 ```
+keys.js
+npm-debug.log
 node_modules
 .DS_Store
 ```
 
-2. Make a JavaScript file named `keys.js`. **Do Not** add this file to the .gitignore. This would be a good thing to do in the real world, but it makes grading this assignment a challenge.
+2. Make a JavaScript file named `keys.js`. This file should never be committed to github for security of your twitter account.
 
 Inside keys.js your file will look like this:
 
@@ -46,9 +48,9 @@ exports.twitterKeys = {
 
    * Step One: Visit <https://apps.twitter.com/app/new>
    * Step Two: Fill out the form with dummy data. Type `http://google.com` in the Website input. Don't fill out the Callback URL input. Then submit the form.
-   * Step Three: On the next screen, click the Keys and Access Tokens tab to get your consume key and secret. 
+   * Step Three: On the next screen, click the Keys and Access Tokens tab to get your consume key and secret.
      * Copy and paste them where the `<input here>` tags are inside your keys.js file.
-   * Step Four: At the bottom of the page, click the `Create my access token` button to get your access token key and secret. 
+   * Step Four: At the bottom of the page, click the `Create my access token` button to get your access token key and secret.
      * Copy the access token key and secret displayed at the bottom of the next screen. Paste them where the `<input here>` tags are inside your keys.js file.
 
 4. Make a file called `random.txt`.
