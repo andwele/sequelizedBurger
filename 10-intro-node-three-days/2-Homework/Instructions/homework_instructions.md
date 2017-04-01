@@ -187,6 +187,8 @@ exports.twitterKeys = {
 
 * Do not overwrite your file each time you run a command.
 
+* Implement the input gathering with inquirer rather than process.argv.
+
 - - -
 
 ### One More Thing
