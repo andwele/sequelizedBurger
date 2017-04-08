@@ -1,0 +1,280 @@
+Callback Functions
+
+
+SECTION 1
+________________________________________________________________________
+Let’s start with something familiar, a click event-handler using jQuery:
+
+$(‘#colorChangeButton’).on(‘click’, function (e) {
+	$(‘body’).css({background: ‘black’});
+});
+
+
+Here the jQuery ‘on’ function takes two parameters: first, a string identifying the kind of event we’re listening for — in this case, a click event — and second, an inline function specifying what action to take when the ‘colorChangeButton’ is clicked — in this case, it will change the color of the HTML body to black. Of course, we could rewrite this by first defining a function — say we call it bodyBlackout — and then passing in that second parameter — that is, the same function — by name:
+
+
+1) write the function
+
+function bodyBlackout (e) {
+	$(‘body’).css({background: ‘black’});
+}
+
+
+2) pass it to jQuery’s ‘on’ function by its name
+
+$(‘#colorChangeButton’).on(‘click’, bodyBlackout);
+
+
+Either way, the crucial thing to note is that one function — whether this function is written inline as an anonymous function or previously defined — is passed as a parameter to another function. That passed-in function is a callback function.
+
+But why that name, ‘callback’?
+
+To understand this, let’s first note something about our example (and about event-listeners in JavaScript in general): the callback function will only be executed once the given event takes place. In other words, bodyBlackout only springs into action after the colorChangeButton has been clicked.
+
+
+
+SECTION 2
+________________________________________________________________________
+To drive the point home, consider the following example, in which we have one function called ‘calculateTotal’ that takes four parameters, two of which are functions. calculateTotal will first add two numbers together; then it will increase the sum by a certain percent — basically the idea is to add two prices and then top the total off with a tax. We’ll write two other function to handle these two calculations:
+
+
+1) a function for adding two numbers
+
+function addTheNumbers (a, b) {
+	var sum = a + b;
+	return sum;
+}
+
+
+2) a function to add a 10% tax
+
+function addTheTax (sum) {
+	var total = sum * 1.1;
+	return total;
+}
+
+
+3) Now let’s write the calculate total function
+
+function calculateTotal (aNumber, anotherNumber, theAddingFunction, theTaxingFunction) {
+	var addedNumbers = theAddingFunction(aNumber, anotherNumber);
+	var taxedTotal = theTaxingFunction(addedNumbers);
+	return taxedTotal;
+}
+
+
+And there we have it, a function that takes not just one, but two callback functions. In this example, all the code is executed synchronously, which is to say, roughly, in order, top-to-bottom, without delay. You call calculateTotal, then the sum of the first two parameters is saved to the variable ‘addedNumbers’, then that sum is passed to the taxing function, and that new total is saved to the variable ‘taxedTotal’, then taxedTotal is returned. This is in contrast to the first example with jQuery, which illustrates asynchronicity, where the callback function waits around patiently until the event it’s attached to is triggered by your clicking of the button. How would you call the calculateTotal function?
+
+var itemOne = 4.99;
+var itemTwo = 9.99;
+calculateTotal(itemOne, itemTwo, addTheNumbers, addTheTax);
+
+Since calculateTotal returns the total, and since we’ll probably want to use the total, we would probably want to capture the total in a variable, so maybe the last line should look like this:
+
+var total = calculateTotal(itemOne, itemTwo, addTheNumbers, addTheTax);
+
+Great, fantastic, wonderful.
+
+
+
+SECTION 3
+________________________________________________________________________
+
+To beat this horse to death, a totally obnoxious analogy: a recipe. We’re cooking chicken parmesan and preparing a salad:
+
+1. Set out a bowl of flour, a bowl of breadcrumbs, and some beaten egg.
+2. Flour the chicken.
+3. Dip the chicken in batter.
+4. Hit that chicken with some breadcrumbs.
+5. Throw the chicken in a preheated oven and set a timer to 20 minutes.*
+
+Comments: thus far our code — the recipe — has been synchronous. First do this, then do this, then do that, etc. But in the very last step we introduced an opportunity for a callback:
+
+*WHEN the timer goes off…
+5.1. Take the chicken out of the oven.
+5.2. Pour marinara sauce over the chicken.
+5.3. Sprinkle mozzarella on top.
+
+Comments: clearly, if this portion of the recipe were executed immediately after you put the chicken in the oven, you would have a problem, raw chicken with sauce and melted cheese on top. this mirrors the problem you would have if your click event callback functions were executed immediately: the user hasn’t clicked anything yet, but your page is already displaying new windows, or submitting forms that haven’t been filled out yet, and so on. but what happens during the twenty minutes that the chicken is in the oven?
+
+6. Chop cucumbers, tomatoes, and onions.
+7. Toss them all together.
+8. Blend olive oil, balsamic vinegar, garlic clove, and salt and pepper for dressing.
+9. Pour dressing over the salad.
+
+Comments: in other words, after you set up your timer you don’t just go take a nap and you don’t just stand paralyzed in the middle of the kitchen. no, instead you go on executing the recipe synchronously, or in order: you chop the veggies, make the dressing, etc. similarly, after JavaScript sets up a listener, it continues executing your code synchronously, top-down.
+
+You should now have a basic understanding of i. what a callback function is and ii. the distinction involved in synchronous vs. asynchronous. If you have questions, note them down. They may be addressed below, and if so, great! If not, be sure to ask in class. Yes, this is a cliche at this point, but: if you have a question, chances are someone else has the same question. Be the hero, ask the question. So again, you should now be familiar with the pattern of passing a function as an argument to another function. You should also have a general sense of what it means for a callback to be asynchronous. Finally, you should be aware, whenever you’re coding, that if you expect a callback to provide you with data you need, you must be careful not to have code somewhere down the line that may try to use that data before it’s available: e.g., you don’t want to removeChickenFromOven() before the kitchen timer rings. Try to get the big picture here. These concepts will be repeated, reinforced, and demonstrated in class.
+
+
+
+
+SECTION 4
+________________________________________________________________________
+
+In the rest of this article I will try to clear up some common confusion (or create more of it, we’ll see). I’ll try to do this in plain-ish English, and with illustrative code examples. But I’ll also talk about how JavaScript is working under the hood. That discussion is really an extra in that it isn’t absolutely critical for successfully using callback functions. That said, read it anyway. Why not? It can’t hurt, and even if you don’t follow 100%, you might still find it useful. I’ll keep it as brief as possible.
+
+Alright, now the common confusion.
+
+You know JavaScript is single-threaded. That means the JavaScript engine is only ever doing one thing at a time. Let’s explicitly acknowledge that JavaScript is single-threaded and synchronous. That means that the JavaScript engine — the thingy in our browsers that’s reading our code, parsing it, translating it into talk that computer machines can understand, and in general bringing our code to life — is only ever dealing with one command at a time. Moreover, it is confronting these commands line-by-line, more or less top to bottom, and in order. Second, let’s explicitly acknowledge that, while the JavaScript engine running our code is living life single-threaded-style, the JavaScript engine is NOT the only thing going on in the browser. For example, the browser also has a rendering engine, which is responsible for painting pages on the screen. The browser (and not the JavaScript engine) is also responsible for making HTTP requests, receiving responses, and so on. JavaScript is our way of directing the browser’s activities. Keep this in mind.
+
+Now, what confusion does this information clear up?
+
+“Well, if JavaScript is single-threaded, how can it keep executing our code at the same time as it’s getting JSON data via an HTTP request?”
+
+The answer is: it’s not. The JavaScript instructs the browser to make the HTTP request, then the JavaScript engine carries on with your code while the browser handles making the request. Let’s look at an example API call.
+
+var importantInfo;
+
+$.get(‘http://somewebsite.com/theAPI/whatever’, function (err, data) {
+
+	importantInfo = data;
+	console.log(importantInfo); //logs the data we received
+
+}); //the anonymous function that is the second argument to the jQuery get function is a callback. once the data has been returned, this function will be executed.
+
+console.log(importantInfo); //logs ‘undefined’
+
+What happened here? Well, to callback our recipe analogy, we put our chicken in the oven and then took it out, sauced it, and cheesed it before the chicken was ready. What happened above is that the HTTP request was made, and the browser was left awaiting the response. At that point, the JavaScript engine carried on synchronously and encountered the bottom-most console.log(). But at that point, the variable importantInfo was still undefined. Then, once the data was received, the anonymous callback function was executed. Inside that function, the value of importantInfo was first set to the data received. Only then was importantInfo logged — now with a defined value.
+
+
+
+
+SECTION 5
+________________________________________________________________________
+Now let’s switch gears for a minute and talk about the execution stack. The execution stack is basically a stack of execution contexts. Let’s see what that means.
+
+var aNumber = 10;
+
+This variable, aNumber, is defined smack dab directly on the global object. Try running the following code:
+
+var aNumber = 10;
+console.log(window);
+
+If you open your developer console you’ll see the window object — which is the global object in the case of JavaScript being run in the browser. Go ahead and expand this gigantic object. You’ll find that if you scroll down far enough you will eventually find, right on this global window object, a key of ‘aNumber’ with a value of 10. If you run the following code, you will get the same result:
+
+var aNumber = 10;
+console.log(this);
+
+This is because in the global execution context JavaScript’s ‘this’ keyword refers to none other than the global object, i.e., the window object. We would say that the global execution context consists of 1) the global object, which defines methods and properties available from anywhere and everywhere in your code, and 2) the ‘this’ keyword, which in this case refers to the global object.
+
+But now consider this example:
+
+var aNumber = 10;
+
+function aNewExecutionContext () {
+	var aNumber = 7;
+	var anotherNumber = 29;
+	console.log(aNumber); //log #1
+	console.log(anotherNumber); //log #2
+}
+
+aNewExecutionContext();
+console.log(aNumber); //log #3
+console.log(anotherNumber); //log #4
+
+Prior to even running the first line, the JavaScript engine establishes the global execution context. Then, at the first line, the variable aNumber is defined in this global context. Our function, aNewExecutionContext, is also created within the global context. But, when our function, aNewExecutionContext, is invoked, and the JavaScript engine finds itself ‘inside’ this function, we are dealing with a new execution context. The execution stack now looks like this:
+
+illustration 1
+
+Within this execution context, aNumber is defined to be 7, anotherNumber is defined to be 29. But suppose we deleted the first line inside of our function, the line defining aNumber to be 7. What would log #1 show us? It would show us 10; This is because the JavaScript engine would first look for aNumber within the current execution context and, when it fails to find it there, it would check the outer environment, which in this case is the global execution context. It would find aNumber there, and so log #1 would show us the value 10. You may remember all this from previous weeks and our discussion of variable scope. The important take-away here is that this new execution context has an additional, third element: a reference to its outer environment. The global context didn’t have an outer environment since it’s the ‘top-level’, the base execution context.
+
+What happens when the JavaScript engine has run all through aNewExecutionContext? The execution context is simply ‘popped’ right off the execution stack, like a pancake. Our execution context is once again the global execution context:
+
+illustration 2
+
+So when log #3 comes around, the variable aNumber is shown to be 10. Log #4 is shown to be not defined. Why? Because anotherNumber was only defined within the execution context of our function, and by the time the JavaScript engine comes to log #4, that execution context is history.
+
+The big question: what does all this have to do with asynchronous callback functions? Everything, as it turns out.
+
+JavaScript maintains an event queue. When, for example, your JavaScript code sets up a click event listener, and the user clicks on the element to which you have attached this listener, that event is placed in the event queue. When your JavaScript code sends the browser off to make a request, and the browser finally receives a response, that event will be placed on the event queue. Until the JavaScript engine attends to the events in the queue, it does not have knowledge of any click, it does not have the JSON of rat-sightings across NYC that it wants to use to create a geographic data visualization. But, and this is a big but, the JavaScript engine will NOT check the event queue UNTIL everything has cleared off of the execution stack. Take a look at the following code and the resulting stack of execution contexts:
+
+function one () {
+	console.log(‘I’m number ONE!’ I’ve created a new execution context on top of the stack.);
+	two();
+}
+
+function two () {
+	console.log(‘I’m number TWO! I’ve created an execution context on top of number ONE’s execution context.’);
+}
+
+one();
+
+First we have the global execution context, as shown already in illustration 2.
+
+Then, upon the invocation of function one, in the last line, we have:
+
+illustration 3
+
+Next, once ‘inside’ of function one, function two is invoked, and so we have:
+
+illustration 4
+
+Then, when function two has completed, its execution context is popped off the stack, leaving us again with the stack we saw in illustration 3.
+
+Finally, when function one has completed, its execution context is also popped off the stack, leaving us again in the global context, with nothing on the stack (unless you have more code following functions one and two, which is not the case in our example).
+
+What would happen if our user clicked on a button while the JavaScript engine was preoccupied with function two? First, of course, the event would be registered on the event queue. This is kind of like when your McDonald’s order is ready and sits there while your server finishes up with another customer’s order. Then, only once he’s done with that customer, he will notice your order and hand it to you over the counter. Similarly, so long as functions one and two are on the execution stack JavaScript neither knows nor cares about the items on the event queue. That means that if that bag of McDonald’s contains your cheeseburger, you can’t eat it yet. Similarly, if that item on the event queue is a returned HTTP request you made previously for some JSON data, you can’t consume that data. If function one or two happened to have code requiring that data, well, that’s really too bad, so sad. When the stack clears, THEN you can watch JavaScript jump on executing the callback function you had previously assigned to that particular event.
+
+
+
+
+SECTION 6
+________________________________________________________________________
+To finish this discussion off, let’s look at some code so we can watch JavaScript straight-up ignore us while it completes its work clearing the stack.
+
+function holdYourHorses () {
+
+	var milliseconds = 15000 + new Date().getTime();
+	while (new Date() < ms) {
+		console.log(‘not yet’);
+	}
+	console.log(‘okay, now let me help you out.’);
+}
+
+document.addEventListener(‘click’, function (e) {
+	console.log(‘You clicked me!’);
+});
+
+holdYourHorses();
+console.log(‘hi I am code in the global context.’);
+
+The holdYourHorse function is there to tie up the JavaScript engine for 15 seconds. Run this code and get in some clicks before the 15 seconds are up. You will notice the following:
+
+1) for 15 seconds, you will get a bajillion console logs saying ‘not yet.’ during this time our execution context is the holdYourHorses function.
+
+2) after that function is complete and its execution context is popped off the stack, JavaScript will still determine that it has more code to run in the global context, namely, it still has to deal with the console log in the very last line.
+
+3) only then will you see your click event get the attention of the JavaScript engine. so all in all, your console will show:
+
+
+‘not yet’ a billion times
+‘hi I am more code in the global context.’
+‘okay, now let me help you out.’
+
+Now you know a whole bunch about what callback functions are and how JavaScript handles them under the hood.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
