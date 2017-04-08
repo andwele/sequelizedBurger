@@ -33,7 +33,6 @@ In this week, we will be introducing students to application building with Node 
 * [Day 31 (Unit 10.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=02ecd2ac-c849-419f-97b7-23d51234d21d)
 * [Day 32 (Unit 10.3)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aee24b05-fc47-4029-b4ce-f16a32cc17ed)
 
-
 - - -
 
 ### Copyright
