@@ -11,7 +11,7 @@ This week, students will learn how to set up web servers with Node.js and how ex
 ### Key Activities
 
 * [First Server](1-Class-Content/13.1/Activities/01-FirstServer)
-* [Star Wars Build Up](1-Class-Content/13.2/Activities/01-Buildup)
+* [Star Wars Build Up](1-Class-Content/13.2/Activities/01-BuildUp)
 * [Star Wars Finalized](1-Class-Content/13.2/Activities/03-ExtendedApp)
 * [Hot Restaurant](1-Class-Content/13.3/Activities/01-HotRestaurant)
 
