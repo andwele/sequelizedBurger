@@ -8,7 +8,7 @@ var PORT = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({ type: "application/json" }));
 
 // Data
 var characters = [{
@@ -48,7 +48,7 @@ app.get("/api/:characters?", function(req, res) {
         return;
       }
     }
-
+    console.log(characters);
     return res.send("No character found");
   }
   return res.json(characters);

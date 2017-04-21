@@ -10,14 +10,16 @@ var app = express();
 var PORT = 3000;
 
 // Sets up the Express app to handle data parsing
-app.use(bodyParser.json());
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({
-  type: "application/vnd.api+json"
+  type: "application/json"
 }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname)));
 
 // Star Wars Characters (DATA)
 // =============================================================
@@ -50,6 +52,11 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
+app.get("/viewcharacter", function(req, res) {
+  // res.send("Welcome to the Star Wars Page!")
+  res.sendFile(path.join(__dirname, "view.html"));
+});
+
 // Search for Specific Character (or all characters) - provides JSON
 app.get("/api/:characters?", function(req, res) {
   var chosen = req.params.characters;
@@ -62,6 +69,7 @@ app.get("/api/:characters?", function(req, res) {
         return res.json(characters[i]);
       }
     }
+    console.log(characters);
     return res.json(false);
   }
   return res.json(characters);
@@ -78,6 +86,7 @@ app.post("/api/new", function(req, res) {
   characters.push(newcharacter);
 
   // We then display the JSON to the users
+  console.log(characters);
   res.json(newcharacter);
 });
 

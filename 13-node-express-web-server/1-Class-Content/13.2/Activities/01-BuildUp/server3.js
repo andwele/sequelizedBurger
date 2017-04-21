@@ -35,9 +35,11 @@ app.get("/", function(req, res) {
 });
 
 // What does the question mark indicate?
-app.get("/api/:characters?", function(req, res) {
+app.get("/api/characters/:characterLastname?", function(req, res) {
   // What does this code do?
   var chosen = req.params.characters;
+
+  console.log(req.params);
 
   if (chosen) {
     console.log(chosen);

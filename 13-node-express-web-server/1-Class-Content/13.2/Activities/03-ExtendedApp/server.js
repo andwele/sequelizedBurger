@@ -13,7 +13,10 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({ type: "application/json" }));
+
+// Middleware to allow static files (like css files and iamges) to be served.
+// app.use(express.static(path.join(__dirname)));
 
 // Star Wars Characters (DATA)
 // =============================================================
