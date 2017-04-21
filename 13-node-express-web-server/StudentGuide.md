@@ -21,6 +21,11 @@ This week, students will learn how to set up web servers with Node.js and how ex
 * [Codeschool's Express Course](https://www.codeschool.com/courses/building-blocks-of-express-js).
 * [Stack Overflow Ports Explanation](http://stackoverflow.com/questions/10182798/why-are-ports-below-1024-privileged)
 
+### Live Streams
+
+* [Day 39 (Unit 13.1)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5af9cd8d-2bf0-406d-a4ce-ef4dc57c3983)
+* [Day 40 (Unit 13.2)](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b00e708f-ba14-4382-bdd7-4bd5e197398f)
+
 - - -
 
 ### Copyright
