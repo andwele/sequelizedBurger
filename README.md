@@ -98,12 +98,12 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	11.1	|	Tue, Apr 4, 2017	|	[Javascript Constructors](11-intro-constructors-and-callbacks/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=00ed7e47-ec4c-45b3-971a-3459c08f98cc)	|
 |	11.2	|	Thu, Apr 6, 2017	|	[Javascript Prototypes](11-intro-constructors-and-callbacks/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22bd4c7d-9203-4a29-9e42-4f198bdb5197)	|
 |	11.3	|	Sat, Apr 8, 2017	|	[Javascript Callbacks](11-intro-constructors-and-callbacks/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79561a8e-12b4-4ca4-9857-08295c8ddef1)	|
-|	12.1	|	Tue, Apr 11, 2017	|	Introduction to MySQL	|		|
-|	12.2	|	Thu, Apr 13, 2017	|	Node - MySQL Integration	|		|
-|	12.3	|	Sat, Apr 15, 2017	|	Massive MySQL Data Project	|		|
-|	13.1	|	Tue, Apr 18, 2017	|	Intro to Node Web Servers	|		|
-|	13.2	|	Thu, Apr 20, 2017	|	Intro to Express Servers	|		|
-|	13.3	|	Sat, Apr 22, 2017	|	Hot Restaurant - Backend Application	|		|
+|	12.1	|	Tue, Apr 11, 2017	|	[Introduction to MySQL](12-mysql-three-days/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c125ef7-698f-4614-9c0e-896cf5c20107)	|
+|	12.2	|	Thu, Apr 13, 2017	|	[Node - MySQL Integration](12-mysql-three-days/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a6af6ed-5976-4d1b-a83d-6b14456af703)	|
+|	12.3	|	Sat, Apr 15, 2017	|	[Massive MySQL Data Project](12-mysql-three-days/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aef6495a-8d2c-489a-b48d-55ccf5d16ffd)	|
+|	13.1	|	Tue, Apr 18, 2017	|	[Intro to Node Web Servers](13-node-express-web-server/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5af9cd8d-2bf0-406d-a4ce-ef4dc57c3983)	|
+|	13.2	|	Thu, Apr 20, 2017	|	[Intro to Express Servers](13-node-express-web-server/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b00e708f-ba14-4382-bdd7-4bd5e197398f)	|
+|	13.3	|	Sat, Apr 22, 2017	|	[Hot Restaurant - Backend Application](13-node-express-web-server/StudentGuide.md)	|		|
 |	14.1	|	Tue, Apr 25, 2017	|	Intro to Handlebars	|		|
 |	14.2	|	Thu, Apr 27, 2017	|	Express.js + Handlebars.js + MySQL	|		|
 |	14.3	|	Sat, Apr 29, 2017	|	Intro to ORMs	|		|
