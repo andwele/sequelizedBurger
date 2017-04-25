@@ -104,9 +104,9 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	13.1	|	Tue, Apr 18, 2017	|	[Intro to Node Web Servers](13-node-express-web-server/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5af9cd8d-2bf0-406d-a4ce-ef4dc57c3983)	|
 |	13.2	|	Thu, Apr 20, 2017	|	[Intro to Express Servers](13-node-express-web-server/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b00e708f-ba14-4382-bdd7-4bd5e197398f)	|
 |	13.3	|	Sat, Apr 22, 2017	|	[Hot Restaurant - Backend Application](13-node-express-web-server/StudentGuide.md)	|		|
-|	14.1	|	Tue, Apr 25, 2017	|	Intro to Handlebars	|		|
-|	14.2	|	Thu, Apr 27, 2017	|	Express.js + Handlebars.js + MySQL	|		|
-|	14.3	|	Sat, Apr 29, 2017	|	Intro to ORMs	|		|
+|	14.1	|	Tue, Apr 25, 2017	|	[Intro to Handlebars](14-node-express-handlebars/StudentGuide.md)	|		|
+|	14.2	|	Thu, Apr 27, 2017	|	[Express.js + Handlebars.js + MySQL](14-node-express-handlebars/StudentGuide.md)	|		|
+|	14.3	|	Sat, Apr 29, 2017	|	[Intro to ORMs](14-node-express-handlebars/StudentGuide.md)	|		|
 |	15.1	|	Tue, May 2, 2017	|	Sequelize ORM	|		|
 |	15.2	|	Thu, May 4, 2017	|	Sequelized Associations	|		|
 |	15.3	|	Sat, May 6, 2017	|	Sequelize Relationship and Migrations  / Intro to Project #2	|		|
