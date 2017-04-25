@@ -12,7 +12,8 @@ var port = 3000;
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  port: 8889,
+  password: "root",
   database: "wizard_schools_db"
 });
 
