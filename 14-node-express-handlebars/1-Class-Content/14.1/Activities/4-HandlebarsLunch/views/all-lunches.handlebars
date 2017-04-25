@@ -1,17 +1,21 @@
-<style media="screen">
-  li {
-    height : 100px;
-    width: 100px;
-    color: red;
-    background-color: purple;
-    margin-bottom: 30px;
-  }
+<style>
+	.icecream {
+		width: 150px;
+		height: 150px;
+		color: lightcyan;
+		background-color: #211954;
+		margin: 1em;
+		padding: 1em;
+		list-style: none;
+		font-family: Arial, Helvetica, sans-serif;
+		float: left;
+	}
 </style>
 
 <h1>Lunches for {{eater}}</h1>
 
 <ul>
 {{#each foods }}
-  <li>{{lunch}}</li>
+	<li class="icecream">{{lunch}}</li>
 {{/each}}
 </ul>
