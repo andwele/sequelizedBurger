@@ -4,12 +4,6 @@
 
 During this week's classes, we are going to start going over the semantic templating framework "Handlebars" and start linking MySQL databases to front-end applications.
 
-### Lesson Plans
-
-* [14.1 - Lesson Plan](1-Class-Content/14.1/14.1-Lessonplan.md)
-* [14.2 - Lesson Plan](1-Class-Content/14.2/14.2-Lessonplan.md)
-* [14.3 - Lesson Plan](1-Class-Content/14.3/14.3-Lessonplan.md)
-
 ### Homework Activities
 
 * [Eat-Da-Burger Application](2-Homework/homework_instructions.md)
