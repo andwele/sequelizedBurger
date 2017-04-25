@@ -1,0 +1,29 @@
+<h1>Movies To Watch</h1>
+
+<ul>
+  {{#each movies}}
+    <li>
+      <p>
+        {{this.id}}. {{this.movie}}
+
+        <form action="/{{this.id}}?_method=DELETE" method="POST">
+          <input type="hidden" name="id" value="{{this.id}}">
+          <button type="submit">Delete</button>
+        </form>
+      </p>
+    </li>
+  {{/each}}
+</ul>
+
+<h2>Add a Movie to Watch</h2>
+<form method="POST" action="/" class="button-size">
+	<textarea type="text" name="movie"></textarea>
+	<button type="submit">Save Movie!</button>
+</form>
+
+<h2>Update a Movie</h2>
+<form action="/?_method=PUT" method="POST" class="button-size">
+  <input type="text" name="id" placeholder="id">
+	<textarea type="text" name="movie" placeholder="what do you want to update this movie title to?"></textarea>
+	<button type="submit">Update Movie!</button>
+</form>
