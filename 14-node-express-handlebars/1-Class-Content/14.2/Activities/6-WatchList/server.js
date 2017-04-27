@@ -1,5 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
 
 var app = express();
 var port = 3000;
@@ -10,9 +11,13 @@ app.use(express.static(__dirname + "/public"));
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Override with POST having ?_method=DELETE
+app.use(methodOverride("_method"));
+
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+
 app.set("view engine", "handlebars");
 
 var mysql = require("mysql");
@@ -22,7 +27,7 @@ var connection = mysql.createConnection({
   user: "root",
   port: 8889,
   password: "root",
-  database: "event_saver_db"
+  database: "movie_planner_db"
 });
 
 connection.connect(function(err) {
@@ -35,38 +40,45 @@ connection.connect(function(err) {
 
 });
 
-// Root get route
 app.get("/", function(req, res) {
+  connection.query("SELECT * FROM movies;", function(err, data) {
+    if (err) {
+      throw err;
+    }
 
-    connection.query("SELECT * FROM events;", function(err, data) {
-      if (err) throw err;
+    res.render("index", { movies: data });
 
-      // Test it
-      // console.log('The solution is: ', data);
-
-      // Test it
-      // res.send(data);
-
-      res.render("index", { events: data });
-    });
+  });
 });
 
-
-// Post route -> back to home
 app.post("/", function(req, res) {
-
-    // Test it
-    // console.log('You sent, ' + req.body.event);
-
-    // Test it
-    // res.send('You sent, ' + req.body.event);
-
-  connection.query("INSERT INTO events (event) VALUES (?)", [req.body.event], function(err, result) {
-    if (err) throw err;
-
+  connection.query("INSERT INTO movies (movie) VALUES (?)", [req.body.movie], function(err, result) {
+    if (err) {
+      throw err;
+    }
     res.redirect("/");
   });
+});
 
+app.delete("/:id", function(req, res) {
+  connection.query("DELETE FROM movies WHERE id = ?", [req.params.id], function(err, result) {
+    if (err) {
+      throw err;
+    }
+    res.redirect("/");
+  });
+});
+
+app.put("/", function(req, res) {
+
+  connection.query("UPDATE movies SET movie = ? WHERE id = ?", [
+    req.body.movie, req.body.id
+  ], function(err, result) {
+    if (err) {
+      throw err;
+    }
+    res.redirect("/");
+  });
 });
 
 app.listen(port);

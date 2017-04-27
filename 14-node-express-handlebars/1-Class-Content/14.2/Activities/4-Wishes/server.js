@@ -22,8 +22,7 @@ var connection = mysql.createConnection({
   user: "root",
   port: 8889,
   password: "root",
-  database: "event_saver_db"
-});
+  database: "wishes_db" });
 
 connection.connect(function(err) {
   if (err) {
@@ -35,34 +34,37 @@ connection.connect(function(err) {
 
 });
 
-// Root get route
+// Root get route.
 app.get("/", function(req, res) {
 
-    connection.query("SELECT * FROM events;", function(err, data) {
-      if (err) throw err;
+  connection.query("SELECT * FROM wishes;", function(err, data) {
+    if (err) {
+      throw err;
+    }
 
-      // Test it
-      // console.log('The solution is: ', data);
+    // Test it.
+    // console.log('The solution is: ', data);
 
-      // Test it
-      // res.send(data);
+    // Test it.
+    // res.send(data);
 
-      res.render("index", { events: data });
-    });
+    res.render("index", { wishes: data });
+  });
 });
-
 
 // Post route -> back to home
 app.post("/", function(req, res) {
 
-    // Test it
-    // console.log('You sent, ' + req.body.event);
+  // Test it.
+  // console.log('You sent, ' + req.body.wish);
 
-    // Test it
-    // res.send('You sent, ' + req.body.event);
+  // Test it.
+  // res.send('You sent, ' + req.body.wish)
 
-  connection.query("INSERT INTO events (event) VALUES (?)", [req.body.event], function(err, result) {
-    if (err) throw err;
+  connection.query("INSERT INTO wishes (wish) VALUES (?)", [req.body.wish], function(err, result) {
+    if (err) {
+      throw err;
+    }
 
     res.redirect("/");
   });
