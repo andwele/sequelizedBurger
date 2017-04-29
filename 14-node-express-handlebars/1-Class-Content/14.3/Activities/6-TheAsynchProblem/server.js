@@ -1,5 +1,7 @@
 var orm = require("./config/orm.js");
 
-var data = orm.selectWhere("parties", "party_type", "grown-up");
+console.log('Start Application')
 
-console.log(data); // Data is undefined. Why?
+orm.selectWhere("parties", "party_type", "grown-up", function (error, results) {
+	console.log('This should be our data:', results);
+});
