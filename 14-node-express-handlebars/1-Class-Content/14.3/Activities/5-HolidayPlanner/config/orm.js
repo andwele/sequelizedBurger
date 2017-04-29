@@ -2,7 +2,7 @@ var connection = require("./connection.js");
 
 var orm = {
   select: function(whatToSelect, tableInput) {
-    var queryString = "SELECT ?? FROM ??";
+    var queryString = "SELECT ? FROM ??";
     connection.query(queryString, [whatToSelect, tableInput], function(err, result) {
       if (err) {
         throw err;
@@ -20,7 +20,7 @@ var orm = {
     });
   },
   leftJoin: function(whatToSelect, tableOne, tableTwo, onTableOneCol, onTableTwoCol) {
-    var queryString = "SELECT ?? FROM ?? AS tOne";
+    var queryString = "SELECT ? FROM ?? AS tOne";
     queryString = queryString + " LEFT JOIN ?? AS tTwo";
     queryString = queryString + " ON tOne.?? = tTwo.??";
 
