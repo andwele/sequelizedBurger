@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Star Wars Express</h1>
+			<h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+			<hr>
+			<a href="/add"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Add New Character</button></a>
+			<a href="/all"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-th-list"></span> All Characters</button></a>
+		</div>
+		<div class="row">
+
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Character Search</strong></h3>
+					</div>
+					<div class="panel-body">
+						<input type="text" id="characterSearch" class="form-control" >
+						<br>
+						<div class="text-right">
+							<button type="submit" class="btn btn-primary btn-md" id="searchBtn"><span class="glyphicon glyphicon-search"></span> Search Your Feelings. You know it is true.</button>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Character Statistics</strong></h3>
+					</div>
+					<div class="panel-body">
+						<div class="well">
+							<h2 id="name">Yoda</h2>
+							<div id="stats">
+								<h3><strong>Role:</strong> <span id="role">Jedi Master</span></h3>
+								<h3><strong>Age:</strong> <span id="age">900</span></h3>
+								<h3><strong>Force Points:</strong> <span id="forcePoints">2000</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+<!-- Custom Script -->
+<script src="js/view.js" type="text/javascript"></script>
+
+</body>
+</html>
