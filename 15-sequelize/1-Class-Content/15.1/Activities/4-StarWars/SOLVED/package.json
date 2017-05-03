@@ -1,13 +1,13 @@
 {
-  "name": "sequelize-cli-test",
+  "name": "starwars-express",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mysql": "^2.13.0",
-    "sequelize": "^3.30.4"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mysql": "^2.10.2",
+    "sequelize": "^3.23.0"
   },
   "devDependencies": {},
   "scripts": {
