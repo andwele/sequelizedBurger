@@ -6,8 +6,9 @@
 var Sequelize = require("sequelize");
 
 // Creates mySQL connection using Sequelize
-var sequelize = new Sequelize("sequelize_chirpy", "root", "password", {
+var sequelize = new Sequelize("sequelize_chirpy", "root", "root", {
   host: "localhost",
+  port: 8889,
   dialect: "mysql",
   pool: {
     max: 5,
