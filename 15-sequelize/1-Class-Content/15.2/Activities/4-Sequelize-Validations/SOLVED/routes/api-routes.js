@@ -32,7 +32,11 @@ module.exports = function(app) {
     }).then(function(dbTodo) {
       // We have access to the new todo as an argument inside of the callback function
       res.json(dbTodo);
-    });
+    })
+    .catch(function (error) {
+      console.log(error.message);
+      res.status(500).json({error: error.message});
+    })
   });
 
   // DELETE route for deleting todos. We can get the id of the todo to be deleted from
