@@ -1,27 +1,15 @@
 "use strict";
 
-var assertThrows = function(func, x, y) {
-  var threw = false;
-
-  // Try to execute func with x, y
+var assertThrows = function (func, x, y) {
   try {
-    func(x, y);
+    var result = func(x, y);
+    console.log('The test passed! ' + x + " * " + y + " = " + result);
+    return result;
   }
-  catch (err) {
-    // If func throws, note it.
-    threw = true;
+  catch (error) {
+    console.log('The test failed: ' + error);
+    return false;
   }
-
-  // Report whether func threw.
-  if (!threw) {
-    console.log("Function did not throw.");
-  }
-  else { 
-    console.log("Function threw, as expected.");
-  }
-
-  // Return whether func threw.
-  return threw;
 };
 
 var multiply = function(x, y) {
@@ -31,4 +19,12 @@ var multiply = function(x, y) {
   else return x * y;
 };
 
+assertThrows(multiply, 2, 2);
 assertThrows(multiply, "a", 2);
+assertThrows(multiply, 2, 10);
+assertThrows(multiply, "a", "b");
+assertThrows(multiply, 200, 10);
+
+
+//assert(multiply(2, 2), 4); = true
+//assert(multiply(2 * 7), 2) = false;

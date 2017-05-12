@@ -4,7 +4,7 @@
 
   * Consider a function, called `disemvowel`, which accepts a string and returns a version of the string without vowels.
 
-  * Your task is to use Chai to write a test suite for `disemvowel`. The catch is that you don't get an implementation yet. First,
+  * Your task is to use Chai to add some extra tests to the test suite for `disemvowel`.
 
   * With your partner, determine what a "representative example" of an input to `disemvowel` might be.
 
@@ -12,6 +12,6 @@
 
   * What different formats can this sort of input take?
 
-  * What _don't_ we expect? What should happen in this case? _Hint_: Just come up with something reasonable. We're not going to make you guess how we handled errors, so you don't have to write a test for this.
+  * What _don't_ we expect? What should happen in this case?
 
   * When you think you're done, explain to your partner why the test you've written totally describes `disemvowel`.
