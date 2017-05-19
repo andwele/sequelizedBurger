@@ -7,7 +7,7 @@ In this week, we will be introducing students to the NoSQL database with MongoDB
 ### Homework Activities
 
 * [Homework Instructions](02-Homework/Instructions/homework_instructions.md)
-* [Example (Video)](02-Homework/Instructions/Week-18-Homework-Video.mov)
+* [Example (Video)](02-Homework/Instructions/mongo-homework-demo.mov)
 
 ### Key Activities
 
