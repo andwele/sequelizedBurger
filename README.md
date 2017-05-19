@@ -112,14 +112,14 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	15.3	|	Sat, May 6, 2017	|	[Sequelize Relationship and Migrations  / Intro to Project #2](15-sequelize/StudentGuide.md)	|		|
 |	16.1	|	Tue, May 9, 2017	|	Project Work 	|		|
 |	16.2	|	Thu, May 11, 2017	|	Testing / Project Work	|		|
-|	16.3	|	Sat, May 13, 2017	|	Testing / Project Work	|		|
-|	17.1	|	Tue, May 16, 2017	|	SEO / Project Work	|		|
-|	17.2	|	Thu, May 18, 2017	|	SEO / Project Work	|		|
+|	16.3	|	Sat, May 13, 2017	|	Project Work	|		|
+|	17.1	|	Tue, May 16, 2017	|	Project Work	|		|
+|	17.2	|	Thu, May 18, 2017	|	Project Work	|		|
 |	17.3	|	Sat, May 20, 2017	|	Project Presentations #2	|		|
-|	18.1	|	Tue, May 23, 2017	|	Intro to MongoDB	|		|
-|	18.2	|	Thu, May 25, 2017	|	Web Scraping / MongoDB	|		|
+|	18.1	|	Tue, May 23, 2017	|	[Intro to MongoDB](18-mongo-mongoose/StudentGuide.md)	|		|
+|	18.2	|	Thu, May 25, 2017	|	[Web Scraping / MongoDB](18-mongo-mongoose/StudentGuide.md)	|		|
 |		|	Sat, May 27, 2017	|	Memorial Day Weekend	|		|
-|	18.3	|	Tue, May 30, 2017	|	Mongoose ORM	|		|
+|	18.3	|	Tue, May 30, 2017	|	[Mongoose ORM](18-mongo-mongoose/StudentGuide.md)	|		|
 |	19.1	|	Thu, Jun 1, 2017	|	Intro to React.js	|		|
 |	19.2	|	Sat, Jun 3, 2017	|	React States and Props	|		|
 |	19.3	|	Tue, Jun 6, 2017	|	MERN Stack (Mongo, Express, React, Node)	|		|
