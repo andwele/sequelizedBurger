@@ -18,7 +18,7 @@ ReactDOM.render(
         <h2>My name is {name}. But you can call me...</h2>
         <h1>The JSX Boss!</h1>
         <hr />
-        <h2>I can do math: {num1 + num2}.</h2>
+        <h2>I can do math: {num1} + {num2} = {num1 + num2}.</h2>
         <h2>I can generate random numbers:
           {Math.floor(Math.random() * 10) + 1},
           {Math.floor(Math.random() * 10) + 1},

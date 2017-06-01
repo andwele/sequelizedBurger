@@ -6,8 +6,8 @@ var ReactDOM = require("react-dom");
 var moment = require("moment");
 
 // Here we create a variable for holding the name and birthday
-var name = "Ahmed";
-var dob = moment("02/14/1989", "MM/DD/YYYY");
+var name = "Dustin";
+var dob = moment("08/17/1986", "MM/DD/YYYY");
 
 ReactDOM.render(
   <div className="main-container">
