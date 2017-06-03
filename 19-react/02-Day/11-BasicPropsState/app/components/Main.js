@@ -13,8 +13,7 @@ var Main = React.createClass({
       age: 64,
       artistry: 94,
       isFuzzy: true,
-      img: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200," +
-      "q_80,w_1200/MTIwNjA4NjMzOTU5NTgxMTk2.jpg"
+      img: "https://pbs.twimg.com/profile_images/659846506678124544/qptu8mfw.jpg"
     };
   },
   // Here we describe our component's render method
@@ -50,11 +49,7 @@ var Main = React.createClass({
             </div>
           </div>
           {/* Passing 3 props to the Child component. These are accessible in Child as this.props  */}
-          <Child
-            dadsAge={this.state.age}
-            dadsFuzzy={this.state.isFuzzy}
-            dadsArtistry={this.state.artistry}
-          />
+          <Child dadsAge={this.state.age} dadsFuzzy={this.state.isFuzzy} dadsArtistry={this.state.artistry} />
         </div>
       </div>
     );

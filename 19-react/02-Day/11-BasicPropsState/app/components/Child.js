@@ -8,7 +8,7 @@ var Child = React.createClass({
   getInitialState: function() {
     return {
       name: "Bob II",
-      img: "http://www.rockstyle-baby.com/wordpress/wp-content/uploads/2013/04/Punk_kid_boy_son_of_anarchy1.jpg"
+      img: "https://ae01.alicdn.com/kf/HTB1C54nPXXXXXccXXXXq6xXFXXXy/2pcs-Kids-font-b-Rock-b-font-Street-font-b-Style-b-font-Clothing-set-Toddler.jpg"
     };
   },
 

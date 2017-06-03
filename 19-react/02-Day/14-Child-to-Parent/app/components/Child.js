@@ -20,6 +20,7 @@ var Child = React.createClass({
     this.setState({
       number: newNumber
     });
+    // Call the setParent method. In this case, it corresponds to the Parent's "this.setParent" Method.
     this.props.setParent(newNumber);
   },
 
