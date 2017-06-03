@@ -14,6 +14,8 @@ var Child = React.createClass({
         <div className="panel-body text-center">
           <h3>HEY I'm the Child!</h3>
           {/* Here we'll deploy the GrandChild Component  */}
+          <GrandChild name="dfdhfh"/>
+          <GrandChild name="Antoher name" />
           <GrandChild />
         </div>
       </div>
