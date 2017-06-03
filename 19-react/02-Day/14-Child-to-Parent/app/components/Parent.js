@@ -14,7 +14,8 @@ var Parent = React.createClass({
   },
   // Here we create a function for updating this component's clicks
   // We will give the Child component access to this function by passing it as a prop
-  setParent: function(newClicks) {
+  setParent: function (newClicks) {
+    // this refers to "Parent" even though setParent is only being called from the Child.
     this.setState({
       clicks: newClicks
     });
