@@ -11,7 +11,7 @@ This week, we will introduce students to React, a declarative, efficient, and fl
 
 ### Homework Activities
 
-* [Homework Instructions](2-Homework/Instructions/homework_instructions.md)
+* [Homework Instructions](Homework/Instructions/homework_instructions.md)
 * [Working Demo of Homework](https://react-is-awesome.herokuapp.com/)
 
 ### Key Activities
