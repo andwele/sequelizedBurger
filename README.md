@@ -110,12 +110,12 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	15.1	|	Tue, May 2, 2017	|	[Sequelize ORM](15-sequelize/StudentGuide.md)	|		|
 |	15.2	|	Thu, May 4, 2017	|	[Sequelized Associations](15-sequelize/StudentGuide.md)	|		|
 |	15.3	|	Sat, May 6, 2017	|	[Sequelize Relationship and Migrations  / Intro to Project #2](15-sequelize/StudentGuide.md)	|		|
-|	16.1	|	Tue, May 9, 2017	|	[Project Work 	|		|
-|	16.2	|	Thu, May 11, 2017	|	esting / Project Work	|		|
-|	16.3	|	Sat, May 13, 2017	|	Project Work	|		|
-|	17.1	|	Tue, May 16, 2017	|	Project Work	|		|
-|	17.2	|	Thu, May 18, 2017	|	Project Work	|		|
-|	17.3	|	Sat, May 20, 2017	|	Project Presentations #2	|		|
+|	16.1	|	Tue, May 9, 2017	|	[Project Work](16-testing/StudentGuide.md) 	|		|
+|	16.2	|	Thu, May 11, 2017	|	[Testing / Project Work](16-testing/StudentGuide.md)	|		|
+|	16.3	|	Sat, May 13, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.1	|	Tue, May 16, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.2	|	Thu, May 18, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.3	|	Sat, May 20, 2017	|	[Project Presentations #2](16-testing/StudentGuide.md)	|		|
 |	18.1	|	Tue, May 23, 2017	|	[Intro to MongoDB](18-mongo-mongoose/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6f7f9889-764e-4f44-ab7a-07ba16ac9c8c)	|
 |	18.2	|	Thu, May 25, 2017	|	[Web Scraping / MongoDB](18-mongo-mongoose/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=544fa9ff-261e-4635-8ece-6c4d403bd125)	|
 |		|	Sat, May 27, 2017	|	Memorial Day Weekend	|		|
