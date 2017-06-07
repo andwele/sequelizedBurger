@@ -16,7 +16,7 @@ var Chat = React.createClass({
 
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h3 className="panel-title">Movie Info</h3>
+                <h3 className="panel-title">Comments</h3>
               </div>
               <div className="panel-body">
                 <p><strong>mjlover:</strong> OMG I LOVE THIS PART!!! </p>

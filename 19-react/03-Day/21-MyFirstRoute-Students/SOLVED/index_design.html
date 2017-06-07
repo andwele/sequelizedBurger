@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Routing Layout</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h2><strong>Which Child???</strong></h2>
+			<p><em>A journey through the whimsical world of React Routing</em></p>
+			<hr>
+			<p>
+				<a class="btn btn-primary btn-lg">Show Child #1</a>
+				<a class="btn btn-danger btn-lg">Show Child #2</a>
+			</p>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Child #1</h3>
+					</div>
+					<div class="panel-body">
+
+						<p>I'm child 1!</p>
+						<p>
+							<a class="btn btn-warning btn-sm">Show Grandchild #1</a>
+							<a class="btn btn-success btn-sm">Show Grandchild #2</a>
+						</p>
+
+						<div class="panel panel-warning">
+							<div class="panel-heading">
+								<h3 class="panel-title">Grandchild #1</h3>
+							</div>
+							<div class="panel-body">
+								I'm grandchild 1!
+							</div>
+						</div>
+
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title">Grandchild #2</h3>
+							</div>
+							<div class="panel-body">
+								I'm grandchild 2!
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">Child #2</h3>
+					</div>
+					<div class="panel-body">
+						I'm child 2!
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
