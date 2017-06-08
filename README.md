@@ -133,7 +133,7 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	22.2	|	Sat, Jun 24, 2017	|	Intro to Data Structures / Project Work	|		|
 |	22.3	|	Tue, Jun 27, 2017	|	Intro to Design Patterns / Project Work	|		|
 |	23.1	|	Thu, Jun 29, 2017	|	Three Programming Languages (Python)	|		|
-|	23.2	|	Sat, Jul 1, 2017	|	Three Programming Languages (Ruby)	|		|
+|		|	Sat, Jul 1, 2017	|	Fourth of July Holiday Weekend	|		|
 |		|	Tue, Jul 4, 2017	|	Fourth of July Holiday	|		|
 |	23.3	|	Thu, Jul 6, 2017	|	Three Programming Languages (Java)	|		|
 |		|	Sat, Jul 8, 2017	|	Project Work	|		|
