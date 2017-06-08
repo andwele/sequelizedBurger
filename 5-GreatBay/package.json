@@ -1,0 +1,10 @@
+{
+  "name": "great-bay-activity",
+  "version": "1.0.0",
+  "description": "activity for demonstrating inquirer with mysql",
+  "main": "greatBayBasic.js",
+  "dependencies": {
+    "inquirer": "^3.0.1",
+    "mysql": "^2.13.0"
+  }
+}

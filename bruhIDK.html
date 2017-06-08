@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Single AJAX</title>
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+
+        // constructing a queryURL variable we will use instead of the literal string
+        // inside of the ajax function
+
+        var movie = [Actors:"Craig T. Nelson, Holly Hunter, Samuel L. Jackson, Jason Lee", 
+            Awards: "Won 2 Oscars. Another 60 wins & 53 nominations.",
+            Country: "USA",
+            Director: "Brad Bird",
+            Genre: "Animation, Action, Adventure",
+            Language: "English, French",
+            Metascore: "value", "90",
+            Plot: "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
+            Poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg",
+            Rated: "PG",
+            Released: "05 Nov 2004",
+            Response: "True",
+            Runtime:"115 min"
+            Title:"The Incredibles"
+            Type :"movie"
+            Writer: "Brad Bird"
+            Year:"2004"
+            imdbID:"tt0317705"
+            imdbRating:"8.0"
+            imdbVotes:"499,804"];
+
+        var queryURL = 
+        "http://www.omdbapi.com/?t=the+incredibles&y=&plot=short&r=json";
+        
+        var params = {
+            url: queryURL,
+            method: "GET"
+        };
+        
+        $.ajax( params ).done(function( response ){
+            console.log( movie[7[2]] );
+            console.log( movie.Title );
+        })
+
+
+        // ---------------------------------------------------------
+        console.log("This console.log will probably happen first because of asynchronicity.");
+        var x = 2;
+        var y = 10;
+        var z = 13;
+        console.log("We can also assign some variables and do some arithmetic while we wait too: 2 + 10 + 13 = ", x + y + z);
+    </script>
+
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+
+        </table>
+    </div>
+
+</body>
+</html>

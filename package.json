@@ -1,0 +1,11 @@
+{
+  "name": "--yes",
+  "version": "1.0.0",
+  "description": "JSON package",
+  "main": "Sciracha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael",
+  "license": "ISC"
+}

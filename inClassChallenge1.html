@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:image" content="">
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <title>A night out in [placeholder], powered by FBM</title>
+</head>
+
+<body>
+
+    <!--Title-->
+    <header class="no-padding">
+        <div class="container" id="header">
+            <div class="navbar-fixed">
+                <div class="container nav-wrapper">
+                <!--Stuff in here for the title.-->
+                </div>
+            </div>
+    </header>
+
+   <!--Input and Output Divs-->
+    <div class="container">
+        <div class="row">
+
+            <!--Input Div-->
+            <div class="col s12 m6" id="input">
+                  <div class="input-field col s12 m6">
+                    <select class="icons">
+                      <option value="" disabled selected>Type of Restaurant</option>
+                      <option value="" data-icon="images/sample-1.jpg" class="circle">example 1</option>
+                      <option value="" data-icon="images/office.jpg" class="circle">example 2</option>
+                      <option value="" data-icon="images/yuna.jpg" class="circle">example 1</option>
+                    </select>
+                    <label>Images in select</label>
+  </div>
+            </div>
+
+            <!--Output Div-->
+            <div class="col s6 offset-s3 m6 center" id="output"></div>
+
+        </div>
+    </div>
+
+
+    <!--Google Maps in the Background-->
+    <div class="container">
+        <div class="row">
+            <div id="map"></div>
+                <div class="col s12"></div>
+        </div>
+    </div>
+
+    <button id='eventTester'>Get events</button>
+
+    <button id='restTester'>Get restaurants</button>
+
+        <div id="eventOutput"></div>
+		
+		<div id="restOutput"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmK1XtRt48lGcJC9249vs6gGmNAelrFpQ&callback=initMap"></script>
+    <script src="assets/scripts/javascript.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="../../bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

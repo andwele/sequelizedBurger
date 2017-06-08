@@ -1,0 +1,1 @@
+var wearher = require("weather-js.js")

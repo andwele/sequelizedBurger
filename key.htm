@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://openweathermap.org/current -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+            
+    <meta http-equiv="Expires" content="Tue, Sep 20 2017 15:27:22 GMT">
+    <meta http-equiv="Last-Modified" content="Tue, Sep 20 2017 15:27:22 GMT">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="weather, world, Openstreetmap, forecast, Openweather, current">
+    <meta name="description" content="Access current weather data for any location on Earth. Current weather is frequently updated based on global models and data from more than 40,000 weather stations. Data is available in JSON, XML, or HTML format">
+    <meta name="author" content="OpenWeatherMap.org">
+    <meta name="domain" content="OpenWeatherMap.org">        
+    <meta name="p:domain_verify" content="34fe229eab8562dca90f4a5962ff80a9">
+    <meta property="title" content="Current weather data">                   
+        <title>Current weather data- OpenWeatherMap</title>
+        <link rel="shortcut icon" href="http://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/favicon.ico">
+<link rel="icon" href="http://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/logo_16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="http://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/logo_32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="http://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/logo_60x60.png" sizes="60x60" type="image/png">        
+        <link href="./key_files/style.min.css" rel="stylesheet">        
+
+<!-- Resources -->
+<link href="./key_files/css" rel="stylesheet" type="text/css">
+<link href="./key_files/css(1)" rel="stylesheet" type="text/css">
+
+<!--{ partial "scripts_js" }-->
+<script src="./key_files/ca-pub-9649553505534207.js"></script><script type="text/javascript" async="" src="./key_files/ga.js"></script><script src="./key_files/bundle.js"></script>                
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31601618-1']);
+  _gaq.push(['_setDomainName', 'openweathermap.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>    
+    </head>
+    
+    <body class="body-orange">
+    
+        <!-- Extra Bar -->
+    <div class="mini-navbar mini-navbar-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9  hidden-xs">
+                    <a href="https://openweathermap.desk.com/" class="first-child" target="_blank">
+                    <i class="fa fa-envelope">  </i>  <span class="hidden-xs">Support Center</span></a>
+                    
+                                        
+                    <a href="https://home.openweathermap.org/users/sign_up" class="pull-right" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;register&#39;]);"><i class="fa fa-arrow-circle-down"></i> Sign Up</a>
+                    <a href="https://home.openweathermap.org/users/sign_in" class="pull-right" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;signin&#39;]);"><i class="fa fa-sign-in"></i> Sign In</a>
+                    
+                                        
+                    <a href="http://openweathermap.org/current#" class="pull-right" id="nav-search"><i class="fa fa-search" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;search&#39;]);"></i> Weather in your city</a>
+                    <a href="http://openweathermap.org/current#" class="pull-right hidden" id="nav-search-close"><i class="fa fa-times"></i></a>
+                    <!-- Search Form -->
+                    <form class="pull-right hidden" role="search" id="nav-search-form" action="http://openweathermap.org/find" method="get">
+                        <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" id="q" name="q">
+                        <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 units-selector">
+                    <label class="toggle candy blue units-toggle">
+                    <input id="units_check" type="checkbox" checked="checked">
+                    <p>
+                    <span>&nbsp; °C &nbsp;</span>
+                    <span>&nbsp; °F &nbsp;</span>
+                    </p>  
+                    <a class="slide-button"></a>
+                    </label>  
+                </div>
+            </div>        
+        </div>
+    </div>    
+        <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 75px;"><div class="navbar navbar-dark navbar-static-top" role="navigation" style="position: fixed; top: 0px;">
+      <div class="container">   
+          <div class="row">
+            <!-- Navbar Header -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-8 navbar-header">
+                <a class="navbar-brand" href="http://openweathermap.org/">          
+                    <img src="./key_files/logo_OpenWeatherMap_orange.svg" width="240" height="30" alt="openweathermap">                
+                </a>             
+            </div><!-- / Navbar Header --> 
+            <!-- Navbar toggle -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>                  
+            <!-- Navbar Links -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-sm-9 col-xs-8  navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+               <!-- <li><a href="/" class="bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'home']);">Home</a></li> -->
+                <li><a href="http://openweathermap.org/city" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;weather&#39;]);">Weather</a></li>
+                <!--<li><a href="/maps" class="bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'maps']);">Maps</a></li>-->
+    
+                <li class="dropdown">
+                  <a href="http://openweathermap.org/current#" class="dropdown-toggle bg-hover-color" data-toggle="dropdown">Maps <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://openweathermap.org/weathermap" class="bg-hover-color">Weather maps</a></li>
+                    <li><a href="http://openweathermap.org/weathermap?basemap=satellite&amp;cities=false&amp;layer=precipitation&amp;lat=30&amp;lon=-20&amp;zoom=3" class="bg-hover-color" target="_blank">Current satellite maps</a></li>
+                    <!--<li><a href="/help/sat.html" class="bg-hover-color">Current satellite maps</a></li>
+                    <li><a href="/beautifulmaps" class="bg-hover-color">Beautiful maps</a></li>-->
+                    <li><a href="http://owm.io/beautiful_maps" target="_blank" class="bg-hover-color">Beautiful places</a></li>
+                    <!--<li><a href="/map_editor_2" class="bg-hover-color">Map Editor 2.0</a></li>-->
+                  </ul>
+                </li>
+                
+                <li><a href="http://openweathermap.org/api" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;api&#39;]);">API</a></li>
+                <li><a href="http://openweathermap.org/price" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;price&#39;]);">Price</a></li>
+                <li><a href="http://openweathermap.org/examples" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;examples&#39;]);">Partners</a></li>
+            
+                <li><a href="http://openweathermap.org/stations" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;station&#39;]);">Stations</a></li>
+                <li><a href="http://openweathermap.org/widgets-constructor" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;widgets&#39;]);">Widgets</a></li> 
+                <li><a href="http://openweathermap.org/news" class="bg-hover-color" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Navbar&#39;, &#39;Main&#39;, &#39;news&#39;]);">News</a></li>
+                             
+               <li class="dropdown">
+                  <a href="http://openweathermap.org/current#" class="dropdown-toggle bg-hover-color" data-toggle="dropdown">About <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://owm.io/about" class="bg-hover-color">About company</a></li>
+                    <li><a href="http://owm.io/" class="bg-hover-color" target="_blank">VANE Data Science Platform</a></li>
+                  <li><a href="http://openweathermap.org/technology" class="bg-hover-color">Technology</a></li>              
+                  </ul>
+                </li>
+              </ul>
+    
+              <!-- Search Form (xs) -->
+              <form class="navbar-form navbar-left visible-xs" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Go!</button>
+              </form> <!-- / Search Form (xs) -->
+    
+            </div> <!-- / Navbar Links -->
+        </div>
+      </div> <!-- / container -->
+    </div></div> <!-- / navbar --> 
+        
+        <div id="notes_block"></div>
+        <!-- Wrapper -->
+        <div class="wrapper">
+            <!-- Topic Header -->        
+                            <div class="topic">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm-4">
+                            <h3 class="primary-font">Current weather data</h3>
+                        </div>
+                        <div class="col-sm-8">
+                            <ol class="breadcrumb pull-right hidden-xs">
+                                                                                                            <li><a href="http://openweathermap.org/">Home</a></li>
+                                                                                                                                                <li><a href="http://openweathermap.org/api">API</a></li>
+                                                                                                                                                <li class="active">Current weather</li>
+                                                                                  
+                            </ol>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                        
+            <div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+
+
+
+            <p class="lead">
+                Access current weather data for any location on Earth including over 200,000
+                cities! Current weather is frequently updated based on global models and
+                data from more than 40,000 weather stations.
+                Data is available in JSON, XML, or HTML format.</p>
+
+
+            <div class="row">
+
+                <div class="col-sm-8">
+
+
+
+                    <h2 class="headline first-child text-color">Call current weather data for one location</h2>
+                    <div class="info-board info-board-orange">
+                    <h4>Please remember that all Examples of API calls that listed on this page are just samples and do not have any connection to the real API service!</h4>
+                    </div>
+                    <section id="name" data-original-title="" title=""></section>
+                    <h3>By city name </h3>
+
+                    <h5>Description:</h5>
+                    You can call by city name or city name and country code. API responds with a list of results that match a searching word.
+                     <div class="info-board info-board-blue">
+                         <p>There is a possibility to receive a central district of the city/town with its own parameters (geographic coordinates/id/name) in API response. <a href="http://samples.openweathermap.org/data/2.5/forecast?q=M%C3%BCnchen,DE&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="blank ">Example</a></p>
+                    </div>
+                    <h5>API call:</h5>
+                    <p>api.openweathermap.org/data/2.5/weather?q={city name}</p>
+                    <p>api.openweathermap.org/data/2.5/weather?q={city name},{country code}</p>
+
+
+
+                    <h5>Parameters:</h5>
+                    <p><b>q</b> city name and country code divided by comma, use ISO 3166 country codes</p>
+
+                    <h5>Examples of API calls:</h5>
+                    <p><a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London</a>
+
+                    </p><p><a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London,uk</a> </p>
+
+
+                    <section id="cityid"></section>
+                    <h3>By city ID </h3>
+
+                    <h5>Description:</h5>
+                    <p>You can call by city ID. API responds with exact result. </p>
+                    <p>List of city ID city.list.json.gz can be downloaded here <a href="http://bulk.openweathermap.org/sample/" target="_blank">http://bulk.openweathermap.org/sample/</a></p>
+
+                    <div class="info-board info-board-blue">
+                        <p>We recommend to call API by city ID to get unambiguous result for your city.</p>
+                    </div>
+
+                    <h5>Parameters:</h5>
+                    <b>id</b> City ID
+
+                    <h5>Examples of API calls:</h5>
+                    <p><a href="http://samples.openweathermap.org/data/2.5/weather?id=2172797&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/weather?id=2172797</a></p>
+
+
+                    <section id="geo"></section>
+                    <h3>By geographic coordinates </h3>
+
+                    <h5>API call:</h5>
+
+                    api.openweathermap.org/data/2.5/weather?lat={lat}&amp;lon={lon}
+
+                    <h5>Parameters:</h5>
+                    <b>lat, lon</b> coordinates of the location of your interest
+
+                    <h5>Examples of API calls:</h5>
+
+                    <p><a href="http://samples.openweathermap.org/data/2.5/weather?lat=35&amp;lon=139&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?lat=35&amp;lon=139</a></p>
+
+                    <h5>API respond:</h5>
+
+                    <pre>{"coord":{"lon":139,"lat":35},
+"sys":{"country":"JP","sunrise":1369769524,"sunset":1369821049},
+"weather":[{"id":804,"main":"clouds","description":"overcast clouds","icon":"04n"}],
+"main":{"temp":289.5,"humidity":89,"pressure":1013,"temp_min":287.04,"temp_max":292.04},
+"wind":{"speed":7.31,"deg":187.002},
+"rain":{"3h":0},
+"clouds":{"all":92},
+"dt":1369824698,
+"id":1851632,
+"name":"Shuzenji",
+"cod":200}</pre>
+
+
+
+
+                    <section id="zip">
+                        <h3 id="zip">By ZIP code </h3></section>
+
+                    <h5>API call:</h5>
+                    api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}
+
+                    <h5>Examples of API calls:</h5>
+
+                    <p><a href="http://samples.openweathermap.org/data/2.5/weather?zip=94040,us&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?zip=94040,us</a></p>
+                    <h5>Parameters:</h5>
+                    <p><b>zip</b> zip code</p>
+
+
+                    <h5>API respond:</h5>
+
+                    <pre>{"coord":{"lon":-122.09,"lat":37.39},
+"sys":{"type":3,"id":168940,"message":0.0297,"country":"US","sunrise":1427723751,"sunset":1427768967},
+"weather":[{"id":800,"main":"Clear","description":"Sky is Clear","icon":"01n"}],
+"base":"stations",
+"main":{"temp":285.68,"humidity":74,"pressure":1016.8,"temp_min":284.82,"temp_max":286.48},
+"wind":{"speed":0.96,"deg":285.001},
+"clouds":{"all":0},
+"dt":1427700245,
+"id":0,
+"name":"Mountain View",
+"cod":200}</pre>
+
+
+
+
+                    <br>
+                    <section id="cities">
+                        <h2 class="headline first-child text-color">Call current weather data for several cities</h2></section>
+
+
+                    <section id="rectangle"></section>
+                    <h3>Cities within a rectangle zone </h3>
+
+                    <h5>Description:</h5>
+                    <p>JSON returns the data from cities within the defined rectangle specified by the geographic coordinates.</p>
+
+                    <h5>Parameters:</h5>
+                    <p><b>bbox</b> bounding box  [lon-left,lat-bottom,lon-right,lat-top,zoom]</p>
+                    <p><b>callback</b> javascript functionName</p>
+                    <p><b>cluster</b> use server clustering of points. Possible values ​​are [yes, no]</p>
+                    <p><b>lang</b> language [ru, en ... ]</p>
+
+                    <h5>Examples of API calls:</h5>
+                    <a href="http://samples.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">http://api.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10</a><p></p>
+
+
+
+                    <section id="cycle"></section>
+                    <h3>Cities in cycle</h3>
+
+                    <h5>Description:</h5>
+                    <p>JSON returns data from cities laid within definite
+                        circle that is specified by center point ('lat', 'lon') and expected number of cities ('cnt') around this point. The default number of cities is 10, the maximum is 50. </p>
+
+                    <h5>Parameters:</h5>
+                    <p><b>lat</b> latitude</p>
+                    <p><b>lon</b> longitude</p>
+                    <!--<li><b>cnt</b> Count</li>-->
+                    <!--<li><b>radius</b> radius in kilometers</li>-->
+                    <p><b>callback</b> functionName for JSONP callback.</p>
+                    <p><b>cluster</b> use server clustering of points. Possible values ​​are [yes, no]</p>
+                    <p><b>lang</b> language [en , ru ... ]</p>
+                    <p><b>cnt</b> number of cities around the point that should be returned</p>
+
+
+                    <h5>Examples of API calls:</h5>
+                    <p><a href="http://samples.openweathermap.org/data/2.5/find?lat=55.5&amp;lon=37.5&amp;cnt=10&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">http://api.openweathermap.org/data/2.5/find?lat=55.5&amp;lon=37.5&amp;cnt=10</a></p>
+
+
+
+                    <section id="severalid"></section>
+                    <h3>Call for several city IDs</h3>
+
+                    <h5>Parameters:</h5>
+                    <b>id</b> City ID
+
+                    <h5>Examples of API calls:</h5>
+                    <p><a href="http://samples.openweathermap.org/data/2.5/group?id=524901,703448,2643743&amp;units=metric&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        http://api.openweathermap.org/data/2.5/group?id=524901,703448,2643743&amp;units=metric
+                        </a></p>
+                    <p>The limit of locations is 20.</p>
+
+                    <br>
+
+
+                    <section id="bulk">
+                        <h2 class="headline first-child text-color">Bulk downloading</h2>
+
+                        <h5>Description:</h5>
+                        <p>We provide number of bulk files with current weather and forecasts. More information is on the <a href="http://openweathermap.org/bulk">Bulk </a>page</p>
+
+                        <div class="info-board info-board-orange">
+                            <p>Bulk downloading is available not for all accounts. To get more information please refer to the  <a href="http://openweathermap.org/price">price.</a></p>
+                        </div>
+
+                        <h5>Examples of bulk files:</h5>
+                        <p><a href="http://bulk.openweathermap.org/sample/" target="_blank">http://bulk.openweathermap.org/sample/</a></p>
+
+
+
+                    </section>
+
+
+                    <br>
+                    <section id="parameter">
+                        <h2 class="headline first-child text-color">Weather parameters in API respond</h2></section>
+
+                    <div class="info-board info-board-orange">
+                        <p>If you do not see some of the parameters in your API respond it means that these weather phenomena are just not happened for the time of measurement for the city or location chosen. Only really measured or calculated data is displayed in API respond. </p>
+                    </div>
+
+                    <section id="current_JSON">
+                        <h3>JSON</h3>
+                    </section>
+
+                    <h5>Example of API respond:</h5>
+
+
+                    <pre>
+{"coord":
+{"lon":145.77,"lat":-16.92},
+"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],
+"base":"cmc stations",
+"main":{"temp":293.25,"pressure":1019,"humidity":83,"temp_min":289.82,"temp_max":295.37},
+"wind":{"speed":5.1,"deg":150},
+"clouds":{"all":75},
+"rain":{"3h":3},
+"dt":1435658272,
+"sys":{"type":1,"id":8166,"message":0.0166,"country":"AU","sunrise":1435610796,"sunset":1435650870},
+"id":2172797,
+"name":"Cairns",
+"cod":200}
+
+</pre>
+
+                    <h5>Parameters:</h5>
+
+
+                    <ul>
+
+                        <li><code>coord</code>
+                            <ul>
+                                <li><code>coord.lon</code> City geo location, longitude</li>
+                                <li><code>coord.lat</code> City geo location, latitude</li>
+                            </ul>
+                        </li>
+
+                        <li><code>weather</code> (more info Weather condition codes)
+                            <ul>
+                                <li><code>weather.id</code> Weather condition id</li>
+                                <li><code>weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)</li>
+                                <li><code>weather.description</code> Weather condition within the group</li>
+                                <li><code>weather.icon</code> Weather icon id</li>
+                            </ul>
+                        </li>
+
+                        <li><code>base</code> Internal parameter
+
+                        </li>
+
+                        <li><code>main</code>
+                            <ul>
+                                <li><code>main.temp</code> Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. </li>
+                                <li><code>main.pressure</code> Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa</li>
+                                <li><code>main.humidity</code> Humidity, %</li>
+                                <li><code>main.temp_min</code> Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.</li>
+                                <li><code>main.temp_max</code> Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.</li>
+                                <li><code>main.sea_level</code> Atmospheric pressure on the sea level, hPa</li>
+                                <li><code>main.grnd_level</code> Atmospheric pressure on the ground level, hPa</li>
+
+                            </ul>
+                        </li>
+
+                        <li><code>wind</code>
+                            <ul>
+                                <li><code>wind.speed</code> Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.</li>
+                                <li><code>wind.deg</code> Wind direction, degrees (meteorological)</li>
+                            </ul>
+                        </li>
+
+                        <li><code>clouds</code>
+                            <ul>
+                                <li><code>clouds.all</code> Cloudiness, %</li>
+                            </ul>
+                        </li>
+
+                        <li><code>rain</code>
+                            <ul>
+                                <li><code>rain.3h</code> Rain volume for the last 3 hours</li>
+                            </ul>
+                        </li>
+
+                        <li><code>snow</code>
+                            <ul>
+                                <li><code>snow.3h</code> Snow volume for the last 3 hours</li>
+                            </ul>
+                        </li>
+
+                        <li><code>dt</code> Time of data calculation, unix, UTC
+                        </li>
+
+                        <li><code>sys</code>
+                            <ul>
+                                <li><code>sys.type</code> Internal parameter</li>
+                                <li><code>sys.id</code> Internal parameter</li>
+                                <li><code>sys.message</code> Internal parameter</li>
+                                <li><code>sys.country</code> Country code (GB, JP etc.)</li>
+                                <li><code>sys.sunrise</code> Sunrise time, unix, UTC</li>
+                                <li><code>sys.sunset</code> Sunset time, unix, UTC</li>
+                            </ul>
+                        </li>
+
+                        <li><code>id</code> City ID
+                        </li>
+
+                        <li><code>name</code> City name
+                        </li>
+
+                        <li><code>cod</code> Internal parameter
+                        </li>
+
+                    </ul>
+
+                    <br>
+
+                    <section id="current_XML">
+                        <h3>XML</h3>
+                    </section>
+
+                    <h5>Example of API respond:</h5>
+
+                    <pre>&lt;current&gt;
+    &lt;city id="2643741" name="City of London"&gt;
+     &lt;coord lon="-0.09" lat="51.51"&gt;
+     &lt;country&gt;GB&lt;/country&gt;
+     &lt;sun rise="2015-06-30T03:46:57" set="2015-06-30T20:21:12"&gt;
+    &lt;/city&gt;
+    &lt;temperature value="72.34" min="66.2" max="79.88" unit="fahrenheit"/&gt;
+    &lt;humidity value="43" unit="%"&gt;
+    &lt;pressure value="1020" unit="hPa"&gt;
+    &lt;wind&gt;
+     &lt;speed value="7.78" name="Moderate breeze"&gt;
+     &lt;direction value="140" code="SE" name="SouthEast"&gt;
+    &lt;/wind&gt;
+    &lt;clouds value="0" name="clear sky"&gt;
+    &lt;visibility value="10000"&gt;
+    &lt;precipitation mode="no"&gt;
+    &lt;weather number="800" value="Sky is Clear" icon="01d"&gt;
+    &lt;lastupdate value="2015-06-30T08:36:14"&gt;
+&lt;/current&gt;
+</pre>
+
+                    <h5>Parameters:</h5>
+                    <ul>
+
+                        <li><code>city</code>
+                            <ul>
+                                <li><code>city.id </code> City ID</li>
+                                <li><code>city.name</code> City name</li>
+                                <li><code>city.coord</code>
+                                    <ul>
+                                        <li><code>city.coord.lon</code> City geo location, longitude</li>
+                                        <li><code>city.coord.lat</code> City geo location, latitude</li>
+                                    </ul>
+                                </li>
+                                <li><code>city.country</code> Country code (GB, JP etc.)</li>
+                                <li><code>city.sun</code>
+                                    <ul>
+                                        <li><code>city.sun.rise</code> Sunrise time</li>
+                                        <li><code>city.sun.set</code> Sunset time</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><code>temperature</code>
+                            <ul>
+                                <li><code>temperature.value</code> Temperature</li>
+                                <li><code>temperature.min</code> Minimum temperature at the moment of calculation. This is deviation from 'temp' that is possible for large cities and megalopolises geographically expanded (use these parameter optionally).</li>
+                                <li><code>temperature.max</code> Maximum temperature at the moment of calculation. This is deviation from 'temp' that is possible for large cities and megalopolises geographically expanded (use these parameter optionally).</li>
+                                <li><code>temperature.unit</code> Unit of measurements. Possilbe valure is Celsius, Kelvin, Fahrenheit.</li>
+                            </ul>
+                        </li>
+
+                        <li><code>humidity</code>
+                            <ul>
+                                <li><code>humidity.value </code> Humidity value</li>
+                                <li><code>humidity.unit</code> %</li>
+                            </ul>
+                        </li>
+
+                        <li><code>pressure</code>
+                            <ul>
+                                <li><code>pressure.value </code> Pressure value</li>
+                                <li><code>pressure.unit</code> hPa</li>
+                            </ul>
+                        </li>
+
+
+                        <li><code>wind</code>
+                            <ul>
+                                <li><code>wind.speed </code>
+                                    <ul>
+                                        <li><code>wind.speed.value </code> Wind speed, mps</li>
+                                        <li><code>wind.speed.name</code> Type of the wind</li>
+                                    </ul>
+                                </li>
+                                <li><code>wind.direction</code>
+                                    <ul>
+                                        <li><code>wind.direction.value </code> Wind direction, degrees (meteorological)</li>
+                                        <li><code>wind.direction.code</code> Code of the wind direction. Possilbe value is WSW, N, S etc.</li>
+                                        <li><code>wind.direction.name</code> Full name of the wind direction.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><code>clouds</code>
+                            <ul>
+                                <li><code>clouds.value </code> Cloudiness</li>
+                                <li><code>clouds.name</code> Name of the cloudiness</li>
+                            </ul>
+                        </li>
+
+                        <li><code>visibility</code>
+                            <ul>
+                                <li><code>visibility.value </code> Visibility, meter</li>
+                            </ul>
+                        </li>
+
+                        <li><code>precipitation</code>
+                            <ul>
+                                <li><code>precipitation.value</code> Precipitation, mm</li>
+                                <li><code>precipitation.mode</code> Possible values are 'no", name of weather phenomena as 'rain', 'snow'</li>
+                            </ul>
+                        </li>
+
+                        <li><code>weather</code>
+                            <ul>
+                                <li><code>weather.number</code> Weather condition id</li>
+                                <li><code>weather.value</code> Weather condition name</li>
+                                <li><code>weather.icon</code> Weather icon id</li>
+                            </ul>
+                        </li>
+
+                        <li><code>lastupdate</code>
+                            <ul>
+                                <li><code>lastupdate.value</code> Last time when data was updated</li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+
+
+                    <br>
+
+                    <section id="list"></section>
+                    <h3>List of weather condition codes</h3>
+
+                    <p>List of <a href="http://openweathermap.org/weather-conditions">weather condition codes</a> with icons
+                        (range of thunderstorm, drizzle, rain, snow, clouds, atmosphere including extreme conditions like tornado, hurricane etc.)</p>
+
+
+
+
+
+                    <br>
+
+                    <section id="min"></section>
+                    <h3>Min/max temperature in current weather API and forecast API </h3>
+
+                    <div class="info-board info-board-orange">
+                        <p>Please, do not confuse min/max parameters in current weather API and forecast API. In current weather API <b>temp_min</b> and <b>temp_max</b> are optional parameters mean min / max temperature in the city at the current moment to see deviation from current temp just for your reference. For large cities and megalopolises geographically expanded it might be applicable.  In most cases both <b>temp_min</b> and <b>temp_max</b> parameters have the same volume as 'temp'. Please, use <b>temp_min</b> and <b>temp_max</b> parameters in current weather API optionally. </p>
+
+                    </div>
+
+                    <h5>Example of current weather API respond:</h5>
+                    <pre>"main":{
+"temp":306.15, //current temperature
+"pressure":1013,
+"humidity":44,
+"temp_min":306, //min current temperature in the city
+"temp_max":306 //max current temperature in the city
+},
+</pre>
+
+                    <h5>For comparison look at example of daily forecast weather API respond:</h5>
+                    <pre>"dt":1406080800,
+"temp":{
+        "day":297.77,  //daily averaged temperature
+        "min":293.52, //daily min temperature
+        "max":297.77, //daily max temperature
+        "night":293.52, //night temperature
+        "eve":297.77, //evening temperature
+        "morn":297.77}, //morning temperature
+</pre>
+
+
+                    <br>
+                    <section id="other">
+                        <h2 class="headline first-child text-color">Other features</h2></section>
+
+
+                    <section id="format"></section>
+                    <h3>Format</h3>
+                    <h5>Description:</h5>
+
+                    <p>JSON format is used by default. To get data in XML or HTML formats just set up mode = xml or html.</p>
+
+                    <h5>Parameters:</h5>
+                    mode - possible values are xml and html. If mode parameter is empty the format is JSON by default.
+
+                    <h5>Examples of API calls:</h5>
+                    <p>JSON <a href="http://samples.openweathermap.org/data/2.5/weather?q=London&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London</a> </p>
+                    <p>XML <a href="http://samples.openweathermap.org/data/2.5/weather?q=London&amp;mode=xml&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London&amp;mode=xml</a></p>
+                    <p>HTML <a href="http://samples.openweathermap.org/data/2.5/weather?q=London&amp;mode=html&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London&amp;mode=html</a></p>
+
+
+
+                    <section id="accuracy"></section>
+                    <h3>Search accuracy</h3>
+
+                    <h5>Description:</h5>
+                    <p>You can use our geocoding system to find cities by name, country, zip-code or geographic coordinates. You can call also by
+                        part of the city name.
+                        To make the result more accurate just put the city name and country divided by comma.</p>
+                    <p>To set the accuracy level either use the 'accurate' or 'like' type parameter.
+                        'accurate' returns exact match values. 'like' returns results by searching for
+                        that substring. <br>
+
+                    </p><div class="info-board info-board-blue">
+                        Call API by city ID instead of city name, city coordinates or zip code. In this case you get precise respond exactly for your city.
+                    </div>
+
+                    <h5>Parameters:</h5>
+                    <p><b>like</b> close result</p>
+                    <p><b>accurate</b> accurate result</p>
+
+                    <h5>Examples of API calls:</h5>
+                    <p>Like <a href="http://samples.openweathermap.org/data/2.5/find?q=London&amp;type=like&amp;mode=xml&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/find?q=London&amp;type=like&amp;mode=xml</a> </p>
+                    <p>Accurate <a href="http://samples.openweathermap.org/data/2.5/find?q=London&amp;type=accurate&amp;mode=xml&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/find?q=London&amp;type=accurate&amp;mode=xml</a></p>
+
+
+                    <section id="data">
+                        <h3>Units format</h3></section>
+
+                    <h5>Description:</h5>
+                    <p>Standard, metric, and imperial units are available. </p>
+
+
+
+                    <h5>Parameters:</h5>
+                    <p><b>units</b> metric, imperial. When you do not use units parameter, format is Standard by default. </p>
+
+                    <div class="info-board info-board-blue">
+                        <p>Temperature is available in Fahrenheit,  Celsius and Kelvin units. </p>
+                        <ul><li>For temperature in Fahrenheit use units=imperial</li>
+                            <li>For temperature in Celsius use units=metric</li>
+                            <li>Temperature in Kelvin is used by default, no need to use units parameter in API call</li></ul>
+                        <p>List of all API parameters with units <a href="http://openweathermap.org/weather-data" target="_blank">openweathermap.org/weather-data</a></p>
+                    </div>
+
+
+                    <h5>Examples of API calls:</h5>
+
+                    <p>standard <a href="http://samples.openweathermap.org/data/2.5/find?q=London&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/find?q=London</a></p>
+                    <p>metric <a href="http://samples.openweathermap.org/data/2.5/find?q=London&amp;units=metric&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/find?q=London&amp;units=metric</a></p>
+                    <p>imperial <a href="http://samples.openweathermap.org/data/2.5/find?q=London&amp;units=imperial&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">
+                        api.openweathermap.org/data/2.5/find?q=London&amp;units=imperial</a></p>
+
+
+                    <section id="multi">
+                        <h3>Multilingual support</h3></section>
+
+                    <h5>Description:</h5>
+                    <p>
+                        You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values:
+
+                        English - en,      Russian - ru,     Italian - it,     Spanish - es (or sp),
+                        Ukrainian - uk (or ua),  German - de,   Portuguese - pt,     Romanian - ro,
+                        Polish - pl,     Finnish - fi,    Dutch - nl,      French  - fr,
+                        Bulgarian - bg,      Swedish - sv (or se),    Chinese Traditional - zh_tw,    Chinese Simplified - zh (or zh_cn),
+                        Turkish - tr, Croatian - hr, Catalan - ca<br>
+                    </p><p>NOTE: Translation is only applied for the "description" field.</p>
+
+                    <h5>API call:</h5>
+                    http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&amp;lang={lang}
+
+                    <h5>Parameters:</h5>
+                    <b>lang</b> language code
+
+                    <h5>Examples of API calls:</h5>
+                    <a href="http://samples.openweathermap.org/data/2.5/forecast/daily?id=524901&amp;lang=zh_cn&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&amp;lang=zh_cn</a>
+                    <p></p>
+
+                    <section id="call">
+                        <h3>Call back function for JavaScript code</h3></section>
+
+                    <h5>Description:</h5>
+                    <p>
+                        To use JavaScript code you can transfer callback functionName to JSONP callback. <br>
+                    </p><h5>Examples of API calls:</h5>
+                    <a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&amp;callback=test&amp;appid=b1b15e88fa797225412429c1c50c122a1" target="_blank">api.openweathermap.org/data/2.5/weather?q=London,uk&amp;callback=test</a>
+
+
+
+                </div>
+
+
+                <div class="col-sm-4">
+
+                    <ul>
+                        <li><a href="http://openweathermap.org/current#one">Call current weather data for one location</a>
+                            <ul>
+                                <li><a href="http://openweathermap.org/current#name">By city name</a></li>
+                                <li><a href="http://openweathermap.org/current#cityid">By city ID</a></li>
+                                <li><a href="http://openweathermap.org/current#geo">By geographic coordinates</a></li>
+                                <li><a href="http://openweathermap.org/current#zip">By ZIP code</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://openweathermap.org/current#cities">Call current weather data for several cities</a>
+                            <ul>
+                                <li><a href="http://openweathermap.org/current#rectangle">Cities within a rectangle zone</a></li>
+                                <li><a href="http://openweathermap.org/current#cycle">Cities in cycle</a></li>
+                                <li><a href="http://openweathermap.org/current#severalid">Call for several city IDs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://openweathermap.org/current#bulk">Bulk downloading</a></li>
+                        <li><a href="http://openweathermap.org/current#parameter">Parameters of API respond</a>
+                            <ul>
+                                <li><a href="http://openweathermap.org/current#current_JSON">JSON</a></li>
+                                <li><a href="http://openweathermap.org/current#current_XML">XML</a></li>
+                                <li><a href="http://openweathermap.org/current#list">List of condition codes</a></li>
+                                <li><a href="http://openweathermap.org/current#min">Min/max temperature in current weather API and forecast API</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://openweathermap.org/current#other">Other features</a>
+                            <ul>
+                                <li><a href="http://openweathermap.org/current#format">Format</a></li>
+                                <li><a href="http://openweathermap.org/current#accuracy">Search accuracy</a></li>
+                                <li><a href="http://openweathermap.org/current#data">Units format</a></li>
+                                <li><a href="http://openweathermap.org/current#multi">Multilingual support</a></li>
+                                <li><a href="http://openweathermap.org/current#call">Call back function for JavaScript code</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br>
+
+
+                    <script async="" src="./key_files/adsbygoogle.js"></script>
+<!-- Skyscraper -->
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-9649553505534207" data-ad-slot="6999090776" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><iframe width="120" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./key_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                </div>
+
+
+
+                <br>
+
+                <div class="col-sm-10">
+
+
+                    <br>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>            
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <script async="" src="./key_files/adsbygoogle.js"></script>
+<!-- OWM long bottom -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-9649553505534207" data-ad-slot="1070308379" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./key_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                    </div>
+                </div>
+            </div>        
+        </div> <!-- / .wrapper -->        
+        <!-- Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+        <div class="row">
+        <!-- API -->
+        <div class="col-sm-4">
+        
+        <h3 class="text-color">Weather in your city</h3>
+        <ul>
+        <li><a href="http://openweathermap.org/find?q=">Find your city</a></li>
+        <li><a href="http://openweathermap.org/weathermap">Weather maps</a></li>   
+        </ul>
+        
+        <h3 class="text-color">Weather APIs</h3>
+        <div class="content">
+        <ul>
+        <li><a href="http://openweathermap.org/appid">How to start</a></li>
+        <li><a href="http://openweathermap.org/API">Weather APIs for developers</a></li>
+        <li><a href="http://openweathermap.org/current">Current weather</a></li>  
+        <li><a href="http://openweathermap.org/forecast5">5 day / 3 hour weather forecast</a></li>   
+        <li><a href="http://openweathermap.org/forecast16">16 day / daily weather forecast</a></li>
+        <li><a href="http://openweathermap.org/history">Hourly historical data</a></li>
+        <li><a href="http://openweathermap.org/api_station">Data from weather stations</a></li>
+        <li><a href="http://openweathermap.org/examples">Examples of API use</a></li>
+        
+        </ul>
+        
+        
+        
+        </div>
+        </div>
+        <!-- Map layers -->
+        <div class="col-sm-4">
+        <h3 class="text-color">Map layers</h3>
+        <div class="content">
+        <ul>
+        <li><a href="http://openweathermap.org/docs/hugemaps">Examples of weather map layers</a>
+        </li><li><a href="http://openweathermap.org/docs/map_array"> Embed weather maps with array of data</a></li>
+        <li><a href="http://openweathermap.org/docs/tile_map"> Embed weather maps with tile server</a></li>
+        </ul>
+        
+        <h3 class="text-color">How to subscribe</h3>
+        <ul>
+        <li><a href="http://openweathermap.org/price">Price-list</a></li>
+        <li><a href="http://openweathermap.org/price_subscribe">Subscribe to APIs</a></li>
+        
+        </ul>
+        
+        <div class="alert alert-info">
+        Found a bug? Have a question or idea? Welcome to
+        <a href="https://openweathermap.desk.com/customer/portal/emails/new" class="alert-link" target="_blank">Support center
+        </a>
+        </div>
+        <div class="clearfix">
+        </div>
+        </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-sm-4">        
+            <h3 class="text-color">Weather station network</h3>
+            <ul>
+                <li><a href="http://openweathermap.org/stations">How to connect your weather station?</a></li>
+                <!-- <li><a href="/stations#DIY">DIY weather station projects</a></li> -->
+            </ul>
+            
+            <h3 class="text-color">About</h3>
+            <ul>
+                <li><a href="http://openweathermap.org/technology">OpenWeatherMap technology</a></li>
+                <li><a href="http://owm.io/">VANE Spacial Data Science Platform</a></li>            
+            </ul>
+            
+            
+            <h3 class="text-color">Go Social</h3>
+            <div class="content social">
+                <p>Follow OpenWeatherMap on <a href="https://twitter.com/OpenWeatherMap" target="_blank">Twitter</a>, <a href="https://www.facebook.com/groups/270748973021342" target="_blank">Facebook</a>, <a href="https://plus.google.com/u/0/communities/101265402580965077532" target="_blank">Google+</a> and <a href="https://github.com/search?q=openweathermap&amp;ref=cmdform" target="_blank">GitHub.</a></p>            
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            <hr>
+            </div>
+        </div>
+        <!-- Copyrights -->
+            <div class="row">
+                <div class="col-sm-12">
+                <p>© 2012-2016 OpenWeatherMap, Inc.  <a href="http://owm.io/about">About company</a> | <a href="http://openweathermap.org/privacy-policy">Privacy Policy</a> | <a href="http://openweathermap.org/terms">Terms of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>     
+        <script src="./key_files/raven.min.js"></script>
+<script>Raven.config('http://66df88eb63e94f27964b84031e49b358@sentry.owm.io/16').install()</script>              
+    
+    <div id="topcontrol" title="" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"><i class="fa fa-angle-up backtotop"></i></div></body></html>
