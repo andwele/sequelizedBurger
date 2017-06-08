@@ -110,31 +110,31 @@ Live Office Hours: 45 minutes before class and 30 minutes after class
 |	15.1	|	Tue, May 2, 2017	|	[Sequelize ORM](15-sequelize/StudentGuide.md)	|		|
 |	15.2	|	Thu, May 4, 2017	|	[Sequelized Associations](15-sequelize/StudentGuide.md)	|		|
 |	15.3	|	Sat, May 6, 2017	|	[Sequelize Relationship and Migrations  / Intro to Project #2](15-sequelize/StudentGuide.md)	|		|
-|	16.1	|	Tue, May 9, 2017	|	Project Work 	|		|
-|	16.2	|	Thu, May 11, 2017	|	Testing / Project Work	|		|
-|	16.3	|	Sat, May 13, 2017	|	Project Work	|		|
-|	17.1	|	Tue, May 16, 2017	|	Project Work	|		|
-|	17.2	|	Thu, May 18, 2017	|	Project Work	|		|
-|	17.3	|	Sat, May 20, 2017	|	Project Presentations #2	|		|
-|	18.1	|	Tue, May 23, 2017	|	[Intro to MongoDB](18-mongo-mongoose/StudentGuide.md)	|		|
-|	18.2	|	Thu, May 25, 2017	|	[Web Scraping / MongoDB](18-mongo-mongoose/StudentGuide.md)	|		|
+|	16.1	|	Tue, May 9, 2017	|	[Project Work](16-testing/StudentGuide.md) 	|		|
+|	16.2	|	Thu, May 11, 2017	|	[Testing / Project Work](16-testing/StudentGuide.md)	|		|
+|	16.3	|	Sat, May 13, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.1	|	Tue, May 16, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.2	|	Thu, May 18, 2017	|	[Project Work](16-testing/StudentGuide.md)	|		|
+|	17.3	|	Sat, May 20, 2017	|	[Project Presentations #2](16-testing/StudentGuide.md)	|		|
+|	18.1	|	Tue, May 23, 2017	|	[Intro to MongoDB](18-mongo-mongoose/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6f7f9889-764e-4f44-ab7a-07ba16ac9c8c)	|
+|	18.2	|	Thu, May 25, 2017	|	[Web Scraping / MongoDB](18-mongo-mongoose/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=544fa9ff-261e-4635-8ece-6c4d403bd125)	|
 |		|	Sat, May 27, 2017	|	Memorial Day Weekend	|		|
-|	18.3	|	Tue, May 30, 2017	|	[Mongoose ORM](18-mongo-mongoose/StudentGuide.md)	|		|
-|	19.1	|	Thu, Jun 1, 2017	|	Intro to React.js	|		|
-|	19.2	|	Sat, Jun 3, 2017	|	React States and Props	|		|
-|	19.3	|	Tue, Jun 6, 2017	|	MERN Stack (Mongo, Express, React, Node)	|		|
-|	20.1	|	Thu, Jun 8, 2017	|	Intro to C#	|		|
-|	20.2	|	Sat, Jun 10, 2017	|	Intro to .NET / ASP	|		|
-|	20.3	|	Tue, Jun 13, 2017	|	.NET / ASP Development	|		|
-|	21.1	|	Thu, Jun 15, 2017	|	React Native	|		|
-|	21.2	|	Sat, Jun 17, 2017	|	React Native	|		|
-|	21.3	|	Tue, Jun 20, 2017	|	React Native / Intro to Project # 3	|		|
-|	22.1	|	Thu, Jun 22, 2017	|	Search & Sort Algorithms  / Project Work	|		|
-|	22.2	|	Sat, Jun 24, 2017	|	Intro to Data Structures / Project Work	|		|
-|	22.3	|	Tue, Jun 27, 2017	|	Intro to Design Patterns / Project Work	|		|
-|	23.1	|	Thu, Jun 29, 2017	|	Three Programming Languages (Python)	|		|
-|	23.2	|	Sat, Jul 1, 2017	|	Three Programming Languages (Ruby)	|		|
-|		|	Tue, Jul 4, 2017	|	Fourth of July Holiday	|		|
+|	18.3	|	Tue, May 30, 2017	|	[Mongoose ORM](18-mongo-mongoose/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c52fff0d-2824-493b-9eb8-8cfc09f41ecc)	|
+|	19.1	|	Thu, Jun 1, 2017	|	[Intro to React.js](19-React/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da64bbb3-4f30-44f6-800e-5fdd06767bc9)	|
+|	19.2	|	Sat, Jun 3, 2017	|	[React States and Props](19-React/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58e7fc0c-deb1-4c96-b1ae-30f06d72f5d3)	|
+|	19.3	|	Tue, Jun 6, 2017	|	[MERN Stack and React Routing](19-React/StudentGuide.md)	|	[Live Stream](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e45dec2b-e362-4be4-ae16-9cd89e438b31)	|
+|	19.4	|	Thu, Jun 8, 2017	|	React (functions, classes, ES6)	|		|
+|	19.5	|	Sat, Jun 10, 2017	|	React (ES6, Router)/Intro to Project # 3	|		|
+|	20.1	|	Tue, Jun 13, 2017	|	Intro to C#	|		|
+|	20.2	|	Thu, Jun 15, 2017	|	Intro to .NET / ASP	|		|
+|	20.3	|	Sat, Jun 17, 2017	|	.NET / ASP Development	|		|
+|	22.1	|	Tue, Jun 20, 2017	|	Search & Sort Algorithms / Project Work	|		|
+|	22.2	|	Thu, Jun 22, 2017	|	Intro to Data Structures / Project Work	|		|
+|	22.3	|	Sat, Jun 24, 2017	|	Intro to Design Patterns / Project Work	|		|
+|	23.1	|	Tue, Jun 27, 2017	|	Three Programming Languages (Ruby)		|		|
+|	23.2	|	Thu, Jun 29, 2017	|	Three Programming Languages (Python)	|		|
+|		|	Sat, Jul 1, 2017	|	(NO CLASS) Fourth of July Holiday	|		|
+|		|	Tue, Jul 4, 2017	|	(NO CLASS) Fourth of July Holiday	|		|
 |	23.3	|	Thu, Jul 6, 2017	|	Three Programming Languages (Java)	|		|
 |		|	Sat, Jul 8, 2017	|	Project Work	|		|
 |		|	Tue, Jul 11, 2017	|	Project Work	|		|
